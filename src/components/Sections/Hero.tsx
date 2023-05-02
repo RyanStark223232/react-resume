@@ -12,8 +12,8 @@ const Hero: FC = memo(() => {
   const imageSrc2 = useState(heroData.imageSrc2)[0];
   const imageSrc3 = useState(heroData.imageSrc3)[0];
   const imageSrc4 = useState(heroData.imageSrc4)[0];
-  var imageIndex = 0;
-  var images = [imageSrc1, imageSrc2, imageSrc3, imageSrc4];
+  let imageIndex = 0;
+  const images = [imageSrc1, imageSrc2, imageSrc3, imageSrc4];
 
   useEffect(() => {
     const interval = setInterval(() => {

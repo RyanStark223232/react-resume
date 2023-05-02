@@ -1,12 +1,12 @@
 {
   "name": "react-resume-template",
-  "homepage": "http://ryanstark223232.github.io/react-resume",
+  "homepage": "https://ryanstark223232.github.io/react-resume",
   "version": "2.0.0",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "yarn compile && yarn next build",
+    "build": "react-scripts build",
     "clean": "rm -rf build-tsc .next",
     "compile": "yarn run -T tsc --build --verbose",
     "dev": "yarn compile && yarn next dev",
@@ -35,7 +35,7 @@
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
     "cssnano": "^5.1.1",
-    "eslint": "^8.10.0",
+    "eslint": "^8.39.0",
     "eslint-config-next": "^12.1.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.4",

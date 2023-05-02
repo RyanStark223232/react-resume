@@ -32,7 +32,7 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      const { name, email, message } = data;
+      const {name, email, message} = data;
       const emailUrl = `mailto:123@gmail.com?subject=New message from ${name} - ${email}&body=${message}`;
       window.location.href = emailUrl;
     },
