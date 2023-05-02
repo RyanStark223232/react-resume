@@ -91,9 +91,9 @@ export const heroData: Hero = {
 /**
  * About section
  */
-var tdy = new Date().getTime();
-var birthday = new Date('1999-08-21T13:29:15.524486Z').getTime();
-var years_lived = Math.floor((tdy - birthday)/1000/60/60/24/365);
+const tdy = new Date().getTime();
+const birthday = new Date('1999-08-21T13:29:15.524486Z').getTime();
+const years_lived = Math.floor((tdy - birthday)/1000/60/60/24/365);
 
 export const aboutData: About = {
   profileImageSrc: profilepic,
