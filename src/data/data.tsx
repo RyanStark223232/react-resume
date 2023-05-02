@@ -2,31 +2,25 @@ import {
   AcademicCapIcon,
   CalendarIcon,
   DownloadIcon,
-  FlagIcon,
-  MapIcon,
-  OfficeBuildingIcon,
-  SparklesIcon,
 } from '@heroicons/react/outline';
 
-import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
-import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
+//import GithubIcon from '../components/Icon/GithubIcon';
+//import InstagramIcon from '../components/Icon/InstagramIcon';
+//import LinkedInIcon from '../components/Icon/LinkedInIcon';
+//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
+import springImage from '../images/00058-701382191.png';
+import summerImage from '../images/00060-256204503.png';
+import autumnImage from '../images/00044-3704105173.png';
+import winterImage from '../images/00055-756246651.png';
+import porfolioImage1 from '../images/portfolio/portfolio-1.png';
+import porfolioImage2 from '../images/portfolio/portfolio-2.png';
+import porfolioImage3 from '../images/portfolio/portfolio-3.gif';
+import porfolioImage4 from '../images/portfolio/portfolio-4.png';
+import porfolioImage5 from '../images/portfolio/portfolio-5.png';
+import porfolioImage6 from '../images/portfolio/portfolio-6.gif';
+import porfolioImage7 from '../images/portfolio/portfolio-7.png';
+import profilepic from '../images/profilepic.png';
 import {
   About,
   ContactSection,
@@ -36,7 +30,6 @@ import {
   PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
   TimelineItem,
 } from './dataDef';
 
@@ -44,22 +37,20 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'React Resume',
+  description: "Credit: site built with Tim Baker's react resume template",
 };
 
 /**
  * Section definition
  */
 export const SectionId = {
-  Hero: 'hero',
+  Hero: 'about',
   About: 'about',
-  Contact: 'contact',
-  Portfolio: 'portfolio',
   Resume: 'resume',
   Skills: 'skills',
-  Stats: 'stats',
-  Testimonials: 'testimonials',
+  Portfolio: 'portfolio',
+  Contact: 'contact',
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
@@ -68,19 +59,17 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  * Hero section
  */
 export const heroData: Hero = {
-  imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  imageSrc1: springImage,
+  imageSrc2: summerImage,
+  imageSrc3: autumnImage,
+  imageSrc4: winterImage,
+  name: `Geoffrey Wong`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        Technically my job title is <strong className="text-stone-100">Data Scientist</strong>.
+        Though working in a startup company gave me experience from collecting and processing data from requests
+        to data reporting and pitching. I think the word is <strong className="text-stone-100">Full-Stack Data Scientist 🤔</strong>.
       </p>
     </>
   ),
@@ -102,18 +91,18 @@ export const heroData: Hero = {
 /**
  * About section
  */
+var tdy = new Date().getTime();
+var birthday = new Date('1999-08-21T13:29:15.524486Z').getTime();
+var years_lived = Math.floor((tdy - birthday)/1000/60/60/24/365);
+
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
+    {label: 'Age', text: '' + years_lived, Icon: CalendarIcon},
     {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -125,66 +114,70 @@ export const skills: SkillGroup[] = [
     name: 'Spoken languages',
     skills: [
       {
-        name: 'English',
-        level: 10,
+        name: 'English (The IELTS Score)',
+        level: 8.5,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Cantonese',
+        level: 8,
       },
       {
-        name: 'Spanish',
+        name: 'Mandarin',
+        level: 5,
+      },
+    ],
+  },
+  {
+    name: 'Machine Learning',
+    skills: [
+      {
+        name: 'Pytorch',
+        level: 9,
+      },
+      {
+        name: 'Scikit-Learn',
+        level: 8,
+      },
+      {
+        name: 'Keras',
+        level: 7,
+      },
+      {
+        name: 'Tensorflow',
+        level: 7,
+      },
+    ],
+  },
+  {
+    name: 'Cloud Platform',
+    skills: [
+      {
+        name: 'Google Cloud',
+        level: 8,
+      },
+      {
+        name: 'Azure',
+        level: 5,
+      },
+      {
+        name: 'AWS',
         level: 3,
       },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Programming',
     skills: [
       {
-        name: 'React',
+        name: 'Python',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
+        name: 'Java',
         level: 4,
       },
       {
-        name: 'Swift',
+        name: 'C',
         level: 3,
       },
     ],
@@ -196,70 +189,46 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage1,
-  },
-  {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Parkinson\'s Diagnosis from Video of Actions',
+    description: 'Developed a state-of-the-art AI system that accurately diagnoses the severity of Parkinson\'s disease by analyzing videos of patients performing actions in the UPDRS test, resulting in superior performance compared to existing methods.',
+    url: 'https://github.com/RyanStark223232/tfjs-app',
     image: porfolioImage6,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Card Shuffling Prediction with AI (Recurrent Neural Network)',
+    description: 'Utilized Recurrent Neural Network to predict outcome of riffle card shuffling, showcasing room for improvement as AI consistently outperformed existing algorithmic approaches. Investigated reasons for improvement, but a conclusive explanation was not reached.',
+    url: 'https://github.com/RyanStark223232/Card_Shuffle_Prediction',
     image: porfolioImage7,
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage8,
+    title: 'Prudential Client Project: Explainable Machine Learning',
+    description: 'The Business Intelligence Team of Prudential HK was impressed by a project that included out-of-scope exploration. This project involved training models to predict insurance frauds and experimenting with adding prediction explanation to the standard pipeline of Azure Model Hosting.',
+    url: '#portfolio',
+    image: porfolioImage1,
   },
   {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage9,
+    title: 'Prudential Client Project: Data Processing in Power Query',
+    description: 'We established our first project with Prudential HK, and since then, our relationship has remained strong. As part of the project, I successfully revamped their entire data processing system in SAS with Power Query and seamlessly ported the data to the highly efficient PowerBI Dashboard.',
+    url: '#portfolio',
+    image: porfolioImage3,
   },
   {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage10,
+    title: 'NLP System',
+    description: 'Developed a web crawling system and implemented simplified machine learning models trained with GPT-2 (Traditional Chinese) to analyze sentiments, classify interests, and extract keywords. Furthermore, automated the monthly re-training of all models. Resulted in a significant increase in workload processing capacity, allowing the company to process 10 times more URLs while reducing costs by 50%.',
+    url: '#portfolio',
+    image: porfolioImage4,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage11,
+    title: 'Automated Data Workflow',
+    description: 'Using Airflow, I have modularized each component of the company\'s pipeline, including log file preprocessing and the generation of client-facing reports. Additionally, I have set up automated deployment (CICD) on Gitlab.',
+    url: '#portfolio',
+    image: porfolioImage2,
+  },
+  {
+    title: 'Dashboards',
+    description: 'Developed two dashboards to showcase exceptional behavior in subscribed emails and browsing patterns, which include web and app usage and location-based data.',
+    url: '#portfolio',
+    image: porfolioImage5,
   },
 ];
 
@@ -268,95 +237,56 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
+    date: 'Sep 2017',
+    location: 'The Chinese University (HK)',
+    title: 'BSc (Hons) in Computer Science',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
+  }
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'July 2021 - June 2023',
+    location: 'Hotmob Limited',
+    title: 'Data Scientist',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        - Data Engineering with Cloud Services <br></br>
+        - Machine Learning (Mostly Natural Language Processing) <br></br>
+        - Data Dashboard Building/ Pitching Deck/ Data Report <br></br>
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'July 2020 - September 2020',
+    location: 'Flying Milk Tea Limited',
+    title: 'AI Developer Intern (Summer Intern)',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        - Performed Web Crawling on Multiple Art-Sharing Websites to Collect Sample 3D Model Data <br></br>
+        - Built Generator that Converts 2D Images into 3D Models <br></br>
       </p>
     ),
   },
 ];
-
-/**
- * Testimonial section
- */
-export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
-  testimonials: [
-    {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
-  ],
-};
 
 /**
  * Contact section
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
+  headerText: 'Contact',
   description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
-    },
-    {
-      type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'ryan5tark223232@gmail.com',
+      href: 'mailto:ryan5tark223232@gmail.com',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'RyanStark223232',
+      href: 'https://github.com/RyanStark223232/',
     },
   ],
 };
@@ -365,9 +295,4 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];

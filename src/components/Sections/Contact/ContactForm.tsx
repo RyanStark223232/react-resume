@@ -32,12 +32,11 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      /**
-       * This is a good starting point to wire up your form submission logic
-       * */
-      console.log('Data to send: ', data);
+      const { name, email, message } = data;
+      const emailUrl = `mailto:123@gmail.com?subject=New message from ${name} - ${email}&body=${message}`;
+      window.location.href = emailUrl;
     },
-    [data],
+    [data]
   );
 
   const inputClasses =
