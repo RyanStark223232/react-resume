@@ -16,7 +16,7 @@ import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.gif';
 import porfolioImage7 from '../images/portfolio/portfolio-7.png';
-//import profilepic from '../images/profilepic.png';
+//import profilepicSrc from '../images/profilepic.png';
 import {
   About,
   ContactSection,
@@ -254,20 +254,20 @@ export const experience: TimelineItem[] = [
     title: 'Data Scientist',
     content: (
       <p>
-        - Data Engineering with Cloud Services <br></br>
-        - Machine Learning (Mostly Natural Language Processing) <br></br>
-        - Data Dashboard Building/ Pitching Deck/ Data Report <br></br>
+        ● Data Engineering with Cloud Services <br></br>
+        ● Machine Learning (Mostly Natural Language Processing) <br></br>
+        ● Data Dashboard Building/ Pitching Deck/ Data Report <br></br>
       </p>
     ),
   },
   {
     date: 'July 2020 - September 2020',
     location: 'Flying Milk Tea Limited',
-    title: 'AI Developer Intern (Summer Intern)',
+    title: 'AI Developer Summer Intern',
     content: (
       <p>
-        - Performed Web Crawling on Multiple Art-Sharing Websites to Collect Sample 3D Model Data <br></br>
-        - Built Generator that Converts 2D Images into 3D Models <br></br>
+        ● Performed Web Crawling on Multiple Art-Sharing Websites to Collect Sample 3D Model Data <br></br>
+        ● Built Generator that Converts 2D Images into 3D Models <br></br>
       </p>
     ),
   },

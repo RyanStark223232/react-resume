@@ -18,10 +18,10 @@ const HomePageWrapper: FC = ({ children }) => {
 
   useEffect(() => {
     const urls: string[] = [
-      '/images/00058-701382191.png',
-      '/images/00060-256204503.png',
-      '/images/00044-3704105173.png',
-      '/images/00055-756246651.png',
+      '/images/00058-701382191.jpg',
+      '/images/00060-256204503.jpg',
+      '/images/00044-3704105173.jpg',
+      '/images/00055-756246651.jpg',
     ];
 
     Promise.all(urls.map((url) => new Promise((resolve) => {
