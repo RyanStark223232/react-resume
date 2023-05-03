@@ -234,7 +234,16 @@ export const education: TimelineItem[] = [
     date: 'Sep 2017',
     location: 'The Chinese University (HK)',
     title: 'BSc (Hons) in Computer Science',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: <p>
+    CGPA: 3.74 (Major GPA: 3.85) <br></br>
+    Scholarship/Award: <br></br>
+    ● Gold Award for Outstanding Academic Performance <br></br>
+    ● Prof SC Loh Scholarship for CSE <br></br>
+    ● Li Po Chun Charit T Fund UGD <br></br>
+    ● Yu To Sang Memorial Scholarship 2019/20 <br></br>
+    ● ELITE Stream Scholarship <br></br>
+    ● CodeVita 2018 Hong Kong 1st runner-up (Python & C)
+    </p>,
   }
 ];
 
