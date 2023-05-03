@@ -12,7 +12,7 @@ export const headerID = 'headerNav';
 const Header: FC = memo(() => {
   const [currentSection, setCurrentSection] = useState<SectionId | null>(null);
   const navSections = useMemo(
-    () => [SectionId.Hero, SectionId.Resume, SectionId.Portfolio, SectionId.Contact],
+    () => [SectionId.About, SectionId.Resume, SectionId.Portfolio, SectionId.Contact],
     [],
   );
 
@@ -62,10 +62,10 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
       setIsOpen(!isOpen);
     }, [isOpen]);
 
-    const baseClass =
-      'p-2 rounded-md first-letter:uppercase transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500';
+    const baseClass = 'p-2 rounded-md first-letter:uppercase transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500';
     const activeClass = classNames(baseClass, 'bg-neutral-900 text-white font-bold');
     const inactiveClass = classNames(baseClass, 'text-neutral-200 font-medium');
+
     return (
       <>
         <button

@@ -2,7 +2,6 @@ import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
   name: string;
-  email: string;
   message: string;
 }
 
@@ -10,7 +9,6 @@ const ContactForm: FC = memo(() => {
   const defaultData = useMemo(
     () => ({
       name: '',
-      email: '',
       message: '',
     }),
     [],
@@ -32,8 +30,8 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      const {name, email, message} = data;
-      const emailUrl = `mailto:123@gmail.com?subject=New message from ${name} - ${email}&body=${message}`;
+      const {name, message} = data;
+      const emailUrl = `mailto:ryan5tark223232@gmail.com?subject=Reached out from Resume Site - ${name} &body=${message}`;
       window.location.href = emailUrl;
     },
     [data]
@@ -45,15 +43,6 @@ const ContactForm: FC = memo(() => {
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
       <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
-      <input
-        autoComplete="email"
-        className={inputClasses}
-        name="email"
-        onChange={onChange}
-        placeholder="Email"
-        required
-        type="email"
-      />
       <textarea
         className={inputClasses}
         maxLength={250}

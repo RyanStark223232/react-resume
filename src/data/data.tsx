@@ -1,6 +1,6 @@
 import {
-  AcademicCapIcon,
-  CalendarIcon,
+  //AcademicCapIcon,
+  //CalendarIcon,
   DownloadIcon,
 } from '@heroicons/react/outline';
 
@@ -9,10 +9,6 @@ import {
 //import LinkedInIcon from '../components/Icon/LinkedInIcon';
 //import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 //import TwitterIcon from '../components/Icon/TwitterIcon';
-import springImage from '../images/00058-701382191.png';
-import summerImage from '../images/00060-256204503.png';
-import autumnImage from '../images/00044-3704105173.png';
-import winterImage from '../images/00055-756246651.png';
 import porfolioImage1 from '../images/portfolio/portfolio-1.png';
 import porfolioImage2 from '../images/portfolio/portfolio-2.png';
 import porfolioImage3 from '../images/portfolio/portfolio-3.gif';
@@ -20,12 +16,11 @@ import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.gif';
 import porfolioImage7 from '../images/portfolio/portfolio-7.png';
-import profilepic from '../images/profilepic.png';
+//import profilepic from '../images/profilepic.png';
 import {
   About,
   ContactSection,
   ContactType,
-  Hero,
   HomepageMeta,
   PortfolioItem,
   SkillGroup,
@@ -45,7 +40,6 @@ export const homePageMeta: HomepageMeta = {
  * Section definition
  */
 export const SectionId = {
-  Hero: 'about',
   About: 'about',
   Resume: 'resume',
   Skills: 'skills',
@@ -58,11 +52,11 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
 /**
  * Hero section
  */
-export const heroData: Hero = {
-  imageSrc1: springImage,
-  imageSrc2: summerImage,
-  imageSrc3: autumnImage,
-  imageSrc4: winterImage,
+//var tdy = new Date().getTime();
+//var birthday = new Date('1999-08-21T13:29:15.524486Z').getTime();
+//var years_lived = Math.floor((tdy - birthday)/1000/60/60/24/365);
+
+export const heroData: About = {
   name: `Geoffrey Wong`,
   description: (
     <>
@@ -89,41 +83,41 @@ export const heroData: Hero = {
 };
 
 /**
- * About section
- */
-const tdy = new Date().getTime();
-const birthday = new Date('1999-08-21T13:29:15.524486Z').getTime();
-const years_lived = Math.floor((tdy - birthday)/1000/60/60/24/365);
-
-export const aboutData: About = {
-  profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
-  aboutItems: [
-    {label: 'Age', text: '' + years_lived, Icon: CalendarIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-  ],
-};
-
-/**
  * Skills section
  */
+export const skill_summary = "Machine Learning, Data Visualization, Data Engineering, Algorithm Design";
 export const skills: SkillGroup[] = [
   {
     name: 'Spoken languages',
     skills: [
       {
-        name: 'English (The IELTS Score)',
+        name: 'English (8.5 is also the IELTS Score)',
         level: 8.5,
       },
       {
         name: 'Cantonese',
-        level: 8,
+        level: 8.5,
       },
       {
         name: 'Mandarin',
         level: 5,
+      },
+    ],
+  },
+  {
+    name: 'Cloud Platform',
+    skills: [
+      {
+        name: 'Google Cloud',
+        level: 8,
+      },
+      {
+        name: 'Azure',
+        level: 5,
+      },
+      {
+        name: 'AWS',
+        level: 3,
       },
     ],
   },
@@ -149,24 +143,7 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Cloud Platform',
-    skills: [
-      {
-        name: 'Google Cloud',
-        level: 8,
-      },
-      {
-        name: 'Azure',
-        level: 5,
-      },
-      {
-        name: 'AWS',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Programming',
+    name: 'Algorithm Design',
     skills: [
       {
         name: 'Python',
@@ -174,14 +151,31 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Java',
-        level: 4,
+        level: 5,
       },
       {
         name: 'C',
-        level: 3,
+        level: 5,
       },
+      {
+        name: 'Pick up New Language ☝️',
+        level: 4,
+      }
     ],
   },
+  {
+    name: 'Data Engineering',
+    skills: [
+      {
+        name: 'Apache Beam',
+        level: 7,
+      },
+      {
+        name: 'Hadoop',
+        level: 3,
+      }
+    ],
+  }
 ];
 
 /**
@@ -276,7 +270,7 @@ export const experience: TimelineItem[] = [
 
 export const contact: ContactSection = {
   headerText: 'Contact',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: '',
   items: [
     {
       type: ContactType.Email,

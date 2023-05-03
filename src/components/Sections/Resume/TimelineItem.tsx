@@ -14,7 +14,7 @@ const TimelineItem: FC<{ item: TimelineItem }> = memo(({ item }) => {
           <span className="flex-1 text-sm sm:flex-none text-gray-400">{date}</span>
         </div>
       </div>
-      <span className = "text-cyan-600">{content}</span>
+      <span className = "text-neutral-300">{content}</span>
     </div>
   );
 });
