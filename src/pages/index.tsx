@@ -14,22 +14,29 @@ const Header = dynamic(() => import('../components/Sections/Header'), { ssr: fal
 
 const HomePageWrapper: FC = ({ children }) => {
   const [backgroundImageIndex, setBackgroundImageIndex] = useState(0);
-  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [imageUrls, setImageUrls] = useState<string[]>([]);
 
   useEffect(() => {
-    Promise.all(
-      backgroundImageUrls.map((url) => {
-        const image = new Image();
-        image.src = url;
-        return new Promise((resolve, reject) => {
-          image.onload = resolve;
-          image.onerror = reject;
-        });
-      })
-    ).then(() => {
-      setImagesLoaded(true);
-    });
+    const urls = [
+      '/images/00058-701382191.png',
+      '/images/00060-256204503.png',
+      '/images/00044-3704105173.png',
+      '/images/00055-756246651.png',
+    ];
 
+    Promise.all(urls.map((url) => new Promise((resolve) => {
+      const image = new Image();
+      image.onload = () => {
+        resolve(url);
+      };
+      image.src = url;
+    })))
+      .then((urls) => {
+        setImageUrls(urls);
+      });
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       const windowHeight = window.innerHeight;
@@ -47,47 +54,18 @@ const HomePageWrapper: FC = ({ children }) => {
     };
   }, []);
 
-  const backgroundImageUrls = [
-    '/images/00058-701382191.png',
-    '/images/00060-256204503.png',
-    '/images/00044-3704105173.png',
-    '/images/00055-756246651.png',
-  ];
-
   return (
-    <>
-      {!imagesLoaded && (
-        <div
-          style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            zIndex: 9999,
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            backgroundColor: '#ffffff',
-          }}
-        >
-          <p>Loading...</p>
-        </div>
-      )}
-      <div
-        style={{
-          backgroundImage: `url("${backgroundImageUrls[backgroundImageIndex]}")`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundAttachment: 'fixed',
-          transition: 'background-image 1s ease-in-out',
-          opacity: imagesLoaded ? 1 : 0,
-          pointerEvents: imagesLoaded ? 'auto' : 'none',
-        }}
-      >
-        <Page {...homePageMeta}>{children}</Page>
-      </div>
-    </>
+    <div
+      style={{
+        backgroundImage: `url("${imageUrls[backgroundImageIndex]}")`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+        transition: 'background-image 1s ease-in-out'
+      }}
+    >
+      <Page {...homePageMeta}>{children}</Page>
+    </div>
   );
 };
 
