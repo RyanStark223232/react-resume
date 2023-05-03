@@ -17,7 +17,7 @@ const HomePageWrapper: FC = ({ children }) => {
   const [imageUrls, setImageUrls] = useState<string[]>([]);
 
   useEffect(() => {
-    const urls = [
+    const urls: string[] = [
       '/images/00058-701382191.png',
       '/images/00060-256204503.png',
       '/images/00044-3704105173.png',
@@ -32,7 +32,7 @@ const HomePageWrapper: FC = ({ children }) => {
       image.src = url;
     })))
       .then((urls) => {
-        setImageUrls(urls);
+        setImageUrls(urls as string[]);
       });
   }, []);
 
