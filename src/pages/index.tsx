@@ -61,7 +61,7 @@ const HomePageWrapper: FC = ({ children }) => {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',
-        transition: 'background-image 1s ease-in-out'
+        transition: 'background-image 0.3s ease-in-out'
       }}
     >
       <Page {...homePageMeta}>{children}</Page>

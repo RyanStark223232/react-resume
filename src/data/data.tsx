@@ -69,7 +69,7 @@ export const heroData: About = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/document/CV 2023-05-15.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -108,7 +108,7 @@ export const skills: SkillGroup[] = [
     name: 'Cloud Platform',
     skills: [
       {
-        name: 'Google Cloud',
+        name: 'Google Cloud Platform',
         level: 8,
       },
       {
@@ -173,6 +173,10 @@ export const skills: SkillGroup[] = [
       {
         name: 'Hadoop',
         level: 3,
+      },
+      {
+        name: 'Spark',
+        level: 3,
       }
     ],
   }
@@ -185,7 +189,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Parkinson\'s Diagnosis from Video of Actions',
     description: 'Developed a state-of-the-art AI system that accurately diagnoses the severity of Parkinson\'s disease by analyzing videos of patients performing actions in the UPDRS test, resulting in superior performance compared to existing methods.',
-    url: 'https://github.com/RyanStark223232/tfjs-app',
+    url: 'https://github.com/RyanStark223232/Pose_PD_Diagnosis',
     image: porfolioImage6,
   },
   {
@@ -235,7 +239,7 @@ export const education: TimelineItem[] = [
     location: 'The Chinese University (HK)',
     title: 'BSc (Hons) in Computer Science',
     content: <p>
-    CGPA: 3.74 (Major GPA: 3.85) <br></br>
+    GPA: 3.85 <br></br>
     Scholarship/Award: <br></br>
     ● Gold Award for Outstanding Academic Performance <br></br>
     ● Prof SC Loh Scholarship for CSE <br></br>
