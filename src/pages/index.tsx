@@ -15,14 +15,20 @@ const Header = dynamic(() => import('../components/Sections/Header'), { ssr: fal
 const HomePageWrapper: FC = ({ children }) => {
   const [backgroundImageIndex, setBackgroundImageIndex] = useState(0);
   const [imageUrls, setImageUrls] = useState<string[]>([]);
+  const fallbackImageUrl = '/images/default.jpg'; // Replace with your default image URL
 
   useEffect(() => {
-    const urls: string[] = [
-      '/images/00058-701382191.jpg',
-      '/images/00060-256204503.jpg',
-      '/images/00044-3704105173.jpg',
-      '/images/00055-756246651.jpg',
-    ];
+    const generateImageUrls = () => {
+      const urls: string[] = [];
+      for (let i = 1; i <= 24; i++) {
+        const imageNumber = String(i).padStart(4, '0');
+        const imageUrl = `/images/${imageNumber}.jpg`;
+        urls.push(imageUrl);
+      }
+      return urls;
+    };
+
+    const urls = generateImageUrls();
 
     Promise.all(urls.map((url) => new Promise((resolve) => {
       const image = new Image();
@@ -43,7 +49,7 @@ const HomePageWrapper: FC = ({ children }) => {
       const totalHeight = document.body.clientHeight;
 
       // Set the background image index based on the current scroll position
-      const newIndex = Math.floor((scrollTop / (totalHeight - windowHeight)) * 3.5);
+      const newIndex = Math.floor((scrollTop / (totalHeight - windowHeight)) * 23.5);
       setBackgroundImageIndex(newIndex);
     };
 
@@ -57,11 +63,11 @@ const HomePageWrapper: FC = ({ children }) => {
   return (
     <div
       style={{
-        backgroundImage: `url("${imageUrls[backgroundImageIndex]}")`,
+        backgroundImage: `url("${imageUrls[backgroundImageIndex] || fallbackImageUrl}")`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',
-        transition: 'background-image 0.3s ease-in-out'
+        transition: 'background-image 1s ease-in-out'
       }}
     >
       <Page {...homePageMeta}>{children}</Page>

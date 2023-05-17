@@ -16,6 +16,7 @@ import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.gif';
 import porfolioImage7 from '../images/portfolio/portfolio-7.png';
+import porfolioImage8 from '../images/portfolio/portfolio-8.png';
 //import profilepicSrc from '../images/profilepic.png';
 import {
   About,
@@ -186,6 +187,12 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  {
+    title: 'FreeChatGPT-Mimic-API',
+    description: 'API allows you to seamlessly integrate ChatGPT into any simple script, giving you the power to perform tasks such as writing resumes, classifying local directories, and simple Q&A. Especially for people living in places where ChatGPT is now accessible and have a hard time paying for the service.',
+    url: 'https://github.com/RyanStark223232/FreeChatGPT-Mimic-API',
+    image: porfolioImage8,
+  },
   {
     title: 'Parkinson\'s Diagnosis from Video of Actions',
     description: 'Developed a state-of-the-art AI system that accurately diagnoses the severity of Parkinson\'s disease by analyzing videos of patients performing actions in the UPDRS test, resulting in superior performance compared to existing methods.',
