@@ -271,13 +271,13 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Fiverr,
-      text: 'RyanStark223232',
-      href: 'https://github.com/RyanStark223232/',
+      text: 'fiverr.com/ryanstark223232',
+      href: 'https://www.fiverr.com/ryanstark223232',
     },
     {
       type: ContactType.Medium,
-      text: 'RyanStark223232',
-      href: 'https://github.com/RyanStark223232/',
+      text: 'medium.com/@ryan5tark223232',
+      href: 'https://medium.com/@ryan5tark223232',
     },
   ],
 };
