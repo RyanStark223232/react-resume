@@ -9,6 +9,8 @@ import GithubIcon from '../../Icon/GithubIcon';
 import InstagramIcon from '../../Icon/InstagramIcon';
 import LinkedInIcon from '../../Icon/LinkedInIcon';
 import TwitterIcon from '../../Icon/TwitterIcon';
+import FiverrIcon from '../../Icon/FiverrIcon';
+import MediumIcon from '../../Icon/MediumIcon';
 import Section from '../../Layout/Section';
 import ContactForm from './ContactForm';
 
@@ -21,6 +23,8 @@ const ContactValueMap: Record<ContactType, ContactValue> = {
   [ContactType.Facebook]: {Icon: FacebookIcon, srLabel: 'Facebook'},
   [ContactType.Twitter]: {Icon: TwitterIcon, srLabel: 'Twitter'},
   [ContactType.Instagram]: {Icon: InstagramIcon, srLabel: 'Instagram'},
+  [ContactType.Fiverr]: {Icon: FiverrIcon, srLabel: 'Fiverr'},
+  [ContactType.Medium]: {Icon: MediumIcon, srLabel: 'Medium'},
 };
 
 const Contact: FC = memo(() => {
@@ -32,8 +36,8 @@ const Contact: FC = memo(() => {
           <MailIcon className="hidden h-16 w-16 text-white md:block" />
           <h2 className="text-2xl font-bold text-white">{headerText}</h2>
         </div>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <div className="order-2 col-span-1 md:order-1 ">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          <div className="order-2 col-span-2 md:order-1 ">
             <ContactForm />
           </div>
           <div className="order-1 col-span-1 flex flex-col gap-y-4 md:order-2">
@@ -44,10 +48,10 @@ const Contact: FC = memo(() => {
                 return (
                   <div key={srLabel}>
                     <dt className="sr-only">{srLabel}</dt>
-                    <dd className="flex items-center">
+                    <dd className="flex items-center ">
                       <a
                         className={classNames(
-                          '-m-2 flex rounded-md p-2 text-neutral-300 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500',
+                          'flex rounded-md p-2 backdrop-filter text-neutral-300 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 bg-neutral-900 opacity-80',
                           {'hover:text-white': href},
                         )}
                         href={href}

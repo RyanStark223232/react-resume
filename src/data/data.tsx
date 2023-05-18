@@ -1,14 +1,7 @@
 import {
-  //AcademicCapIcon,
-  //CalendarIcon,
   DownloadIcon,
 } from '@heroicons/react/outline';
 
-//import GithubIcon from '../components/Icon/GithubIcon';
-//import InstagramIcon from '../components/Icon/InstagramIcon';
-//import LinkedInIcon from '../components/Icon/LinkedInIcon';
-//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-//import TwitterIcon from '../components/Icon/TwitterIcon';
 import porfolioImage1 from '../images/portfolio/portfolio-1.png';
 import porfolioImage2 from '../images/portfolio/portfolio-2.png';
 import porfolioImage3 from '../images/portfolio/portfolio-3.gif';
@@ -17,7 +10,7 @@ import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.gif';
 import porfolioImage7 from '../images/portfolio/portfolio-7.png';
 import porfolioImage8 from '../images/portfolio/portfolio-8.png';
-//import profilepicSrc from '../images/profilepic.png';
+
 import {
   About,
   ContactSection,
@@ -29,17 +22,11 @@ import {
   TimelineItem,
 } from './dataDef';
 
-/**
- * Page meta data
- */
 export const homePageMeta: HomepageMeta = {
   title: 'React Resume',
   description: "Credit: site built with Tim Baker's react resume template",
 };
 
-/**
- * Section definition
- */
 export const SectionId = {
   About: 'about',
   Resume: 'resume',
@@ -49,13 +36,6 @@ export const SectionId = {
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
-
-/**
- * Hero section
- */
-//var tdy = new Date().getTime();
-//var birthday = new Date('1999-08-21T13:29:15.524486Z').getTime();
-//var years_lived = Math.floor((tdy - birthday)/1000/60/60/24/365);
 
 export const heroData: About = {
   name: `Geoffrey Wong`,
@@ -83,9 +63,6 @@ export const heroData: About = {
   ],
 };
 
-/**
- * Skills section
- */
 export const skill_summary = "Machine Learning, Data Visualization, Data Engineering, Algorithm Design";
 export const skills: SkillGroup[] = [
   {
@@ -183,9 +160,6 @@ export const skills: SkillGroup[] = [
   }
 ];
 
-/**
- * Portfolio section
- */
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'FreeChatGPT-Mimic-API',
@@ -237,9 +211,6 @@ export const portfolioItems: PortfolioItem[] = [
   },
 ];
 
-/**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
- */
 export const education: TimelineItem[] = [
   {
     date: 'Sep 2017',
@@ -284,10 +255,6 @@ export const experience: TimelineItem[] = [
   },
 ];
 
-/**
- * Contact section
- */
-
 export const contact: ContactSection = {
   headerText: 'Contact',
   description: '',
@@ -299,6 +266,16 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Github,
+      text: 'RyanStark223232',
+      href: 'https://github.com/RyanStark223232/',
+    },
+    {
+      type: ContactType.Fiverr,
+      text: 'RyanStark223232',
+      href: 'https://github.com/RyanStark223232/',
+    },
+    {
+      type: ContactType.Medium,
       text: 'RyanStark223232',
       href: 'https://github.com/RyanStark223232/',
     },

@@ -15,7 +15,7 @@ const Header = dynamic(() => import('../components/Sections/Header'), { ssr: fal
 const HomePageWrapper: FC = ({ children }) => {
   const [backgroundImageIndex, setBackgroundImageIndex] = useState(0);
   const [imageUrls, setImageUrls] = useState<string[]>([]);
-  const fallbackImageUrl = '/images/default.jpg'; // Replace with your default image URL
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const generateImageUrls = () => {
@@ -39,6 +39,7 @@ const HomePageWrapper: FC = ({ children }) => {
     })))
       .then((urls) => {
         setImageUrls(urls as string[]);
+        setIsLoading(false);
       });
   }, []);
 
@@ -60,28 +61,28 @@ const HomePageWrapper: FC = ({ children }) => {
     };
   }, []);
 
+  const backgroundImageStyle = {
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+    transition: 'background-image 1s ease-in-out',
+  };
+
+  const loadingStyle = {
+    backgroundColor: '#555845', // Replace with your desired background color
+    ...backgroundImageStyle,
+  };
+
+  const loadedStyle = {
+    backgroundImage: `url("${imageUrls[backgroundImageIndex]}")`,
+    ...backgroundImageStyle,
+  };
+
   return (
     <div>
-      <div
-        style={{
-          backgroundImage: `url("${imageUrls[backgroundImageIndex]}")`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundAttachment: 'fixed',
-          transition: 'background-image 1s ease-in-out'
-        }}
-      >
+      <div style={isLoading ? loadingStyle : loadedStyle}>
         <Page {...homePageMeta}>{children}</Page>
       </div>
-      <div
-        style={{
-          backgroundImage: `url("${fallbackImageUrl}")`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundAttachment: 'fixed',
-          transition: 'background-image 1s ease-in-out'
-        }}
-      ></div>
     </div>
   );
 };
