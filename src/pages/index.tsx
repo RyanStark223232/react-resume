@@ -20,7 +20,7 @@ const HomePageWrapper: FC = ({ children }) => {
   useEffect(() => {
     const generateImageUrls = () => {
       const urls: string[] = [];
-      for (let i = 1; i <= 24; i++) {
+      for (let i = 1; i <= 7; i++) {
         const imageNumber = String(i).padStart(4, '0');
         const imageUrl = `/images/${imageNumber}.jpg`;
         urls.push(imageUrl);
@@ -49,7 +49,7 @@ const HomePageWrapper: FC = ({ children }) => {
       const totalHeight = document.body.clientHeight;
 
       // Set the background image index based on the current scroll position
-      const newIndex = Math.floor((scrollTop / (totalHeight - windowHeight)) * 23.5);
+      const newIndex = Math.floor((scrollTop / (totalHeight - windowHeight)) * 6.5);
       setBackgroundImageIndex(newIndex);
     };
 
@@ -61,16 +61,27 @@ const HomePageWrapper: FC = ({ children }) => {
   }, []);
 
   return (
-    <div
-      style={{
-        backgroundImage: `url("${imageUrls[backgroundImageIndex] || fallbackImageUrl}")`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-        transition: 'background-image 1s ease-in-out'
-      }}
-    >
-      <Page {...homePageMeta}>{children}</Page>
+    <div>
+      <div
+        style={{
+          backgroundImage: `url("${imageUrls[backgroundImageIndex]}")`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed',
+          transition: 'background-image 1s ease-in-out'
+        }}
+      >
+        <Page {...homePageMeta}>{children}</Page>
+      </div>
+      <div
+        style={{
+          backgroundImage: `url("${fallbackImageUrl}")`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed',
+          transition: 'background-image 1s ease-in-out'
+        }}
+      ></div>
     </div>
   );
 };
