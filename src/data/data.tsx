@@ -157,6 +157,23 @@ export const skills: SkillGroup[] = [
         level: 3,
       }
     ],
+  },
+  {
+    name: 'Data Dashboards',
+    skills: [
+      {
+        name: 'Looker (Data) Studio',
+        level: 9,
+      },
+      {
+        name: 'Tableau',
+        level: 7,
+      },
+      {
+        name: 'PowerBI',
+        level: 3,
+      }
+    ],
   }
 ];
 
@@ -236,9 +253,10 @@ export const experience: TimelineItem[] = [
     title: 'Data Scientist',
     content: (
       <p>
-        ● Data Engineering with Cloud Services <br></br>
-        ● Machine Learning (Mostly Natural Language Processing) <br></br>
-        ● Data Dashboard Building/ Pitching Deck/ Data Report <br></br>
+        ● Fully responsible for crawling online websites and processing unorganized web data with models trained with GPT-2 (Traditional Chinese) to analyze sentiments, classify interests, and extract keywords, increasing crawling capacity by more than 10 times with half the cost <br></br>
+        ● Impressed the Business Intelligence Team of Prudential HK with out-of-scope exploration in projects, including training deep learning models to predict insurance fraud, adding explanations to inference output, and revamping their data processing system originally in SAS <br></br>
+        ● Using Airflow + Apache Beam + Google Cloud Serverless Computing, fully modularized and automated data processing components of the company's pipeline, including log file preprocessing and the generation of client-facing reports <br></br>
+        ● Developed two dashboards to showcase exceptional behavior in subscribed emails and browsing patterns, including web and app usage and location-based data <br></br>
       </p>
     ),
   },
