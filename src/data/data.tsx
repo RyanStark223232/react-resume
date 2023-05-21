@@ -3,13 +3,9 @@ import {
 } from '@heroicons/react/outline';
 
 import porfolioImage1 from '../images/portfolio/portfolio-1.png';
-import porfolioImage2 from '../images/portfolio/portfolio-2.png';
+import porfolioImage2 from '../images/portfolio/portfolio-2.gif';
 import porfolioImage3 from '../images/portfolio/portfolio-3.gif';
 import porfolioImage4 from '../images/portfolio/portfolio-4.png';
-import porfolioImage5 from '../images/portfolio/portfolio-5.png';
-import porfolioImage6 from '../images/portfolio/portfolio-6.gif';
-import porfolioImage7 from '../images/portfolio/portfolio-7.png';
-import porfolioImage8 from '../images/portfolio/portfolio-8.png';
 
 import {
   About,
@@ -23,7 +19,7 @@ import {
 } from './dataDef';
 
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume',
+  title: 'Geoffrey Wong Resume',
   description: "Credit: site built with Tim Baker's react resume template",
 };
 
@@ -42,9 +38,8 @@ export const heroData: About = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Technically my job title is <strong className="text-stone-100">Data Scientist</strong>.
-        Though working in a startup company gave me experience from collecting and processing data from requests
-        to data reporting and pitching. I think the word is <strong className="text-stone-100">Full-Stack Data Scientist 🤔</strong>.
+        I'm a dynamic <strong className="text-stone-100">Data Scientist</strong> with a <strong className="text-stone-100">Full-Stack</strong> flair. 
+        Seasoned in the trenches of startups, I've mastered the art of Machine Learning + collecting, processing, and presenting data 🤔.
       </p>
     </>
   ),
@@ -182,49 +177,25 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'FreeChatGPT-Mimic-API',
     description: 'API allows you to seamlessly integrate ChatGPT into any simple script, giving you the power to perform tasks such as writing resumes, classifying local directories, and simple Q&A. Especially for people living in places where ChatGPT is now accessible and have a hard time paying for the service.',
     url: 'https://github.com/RyanStark223232/FreeChatGPT-Mimic-API',
-    image: porfolioImage8,
+    image: porfolioImage4,
+  },
+  {
+    title: 'Hotmob Full-Stack Data Scientist Portfolio',
+    description: 'Developed a state-of-the-art AI system that accurately diagnoses the severity of Parkinson\'s disease by analyzing videos of patients performing actions in the UPDRS test, resulting in superior performance compared to existing methods.',
+    url: 'https://github.com/RyanStark223232/Pose_PD_Diagnosis',
+    image: porfolioImage3,
   },
   {
     title: 'Parkinson\'s Diagnosis from Video of Actions',
     description: 'Developed a state-of-the-art AI system that accurately diagnoses the severity of Parkinson\'s disease by analyzing videos of patients performing actions in the UPDRS test, resulting in superior performance compared to existing methods.',
     url: 'https://github.com/RyanStark223232/Pose_PD_Diagnosis',
-    image: porfolioImage6,
+    image: porfolioImage2,
   },
   {
     title: 'Card Shuffling Prediction with AI (Recurrent Neural Network)',
     description: 'Utilized Recurrent Neural Network to predict outcome of riffle card shuffling, showcasing room for improvement as AI consistently outperformed existing algorithmic approaches. Investigated reasons for improvement, but a conclusive explanation was not reached.',
     url: 'https://github.com/RyanStark223232/Card_Shuffle_Prediction',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Prudential Client Project: Explainable Machine Learning',
-    description: 'The Business Intelligence Team of Prudential HK was impressed by a project that included out-of-scope exploration. This project involved training models to predict insurance frauds and experimenting with adding prediction explanation to the standard pipeline of Azure Model Hosting.',
-    url: '#portfolio',
     image: porfolioImage1,
-  },
-  {
-    title: 'Prudential Client Project: Data Processing in Power Query',
-    description: 'We established our first project with Prudential HK, and since then, our relationship has remained strong. As part of the project, I successfully revamped their entire data processing system in SAS with Power Query and seamlessly ported the data to the highly efficient PowerBI Dashboard.',
-    url: '#portfolio',
-    image: porfolioImage3,
-  },
-  {
-    title: 'NLP System',
-    description: 'Developed a web crawling system and implemented simplified machine learning models trained with GPT-2 (Traditional Chinese) to analyze sentiments, classify interests, and extract keywords. Furthermore, automated the monthly re-training of all models. Resulted in a significant increase in workload processing capacity, allowing the company to process 10 times more URLs while reducing costs by 50%.',
-    url: '#portfolio',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Automated Data Workflow',
-    description: 'Using Airflow, I have modularized each component of the company\'s pipeline, including log file preprocessing and the generation of client-facing reports. Additionally, I have set up automated deployment (CICD) on Gitlab.',
-    url: '#portfolio',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Dashboards',
-    description: 'Developed two dashboards to showcase exceptional behavior in subscribed emails and browsing patterns, which include web and app usage and location-based data.',
-    url: '#portfolio',
-    image: porfolioImage5,
   },
 ];
 
@@ -253,10 +224,11 @@ export const experience: TimelineItem[] = [
     title: 'Data Scientist',
     content: (
       <p>
-        ● Fully responsible for crawling online websites and processing unorganized web data with models trained with GPT-2 (Traditional Chinese) to analyze sentiments, classify interests, and extract keywords, increasing crawling capacity by more than 10 times with half the cost <br></br>
-        ● Impressed the Business Intelligence Team of Prudential HK with out-of-scope exploration in projects, including training deep learning models to predict insurance fraud, adding explanations to inference output, and revamping their data processing system originally in SAS <br></br>
-        ● Using Airflow + Apache Beam + Google Cloud Serverless Computing, fully modularized and automated data processing components of the company's pipeline, including log file preprocessing and the generation of client-facing reports <br></br>
-        ● Developed two dashboards to showcase exceptional behavior in subscribed emails and browsing patterns, including web and app usage and location-based data <br></br>
+        ● Transformed web data processing with GPT-2 models, boosting crawling capacity by 10x at half the cost. <br/><br/>
+        ● Captivated Prudential HK's Business Intelligence Team with innovative projects, such as fraud prediction using deep learning and revamping data processing system. <br/><br/>
+        ● Automated company's data pipeline with Airflow, Apache Beam, and Google Cloud, enhancing efficiency and modularizing processes. <br/><br/>
+        ● Created impactful dashboards highlighting exceptional behavior in subscribed emails, browsing patterns, and location-based data. <br/><br/>
+        ● For more detail, download my <a href="document/work-porfolio-hotmob-downloadable.pdf" style={{ color:'SteelBlue'}}>Porfolio Summary PDF</a>.
       </p>
     ),
   },
