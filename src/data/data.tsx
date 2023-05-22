@@ -182,7 +182,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Hotmob Full-Stack Data Scientist Portfolio',
     description: 'Developed a state-of-the-art AI system that accurately diagnoses the severity of Parkinson\'s disease by analyzing videos of patients performing actions in the UPDRS test, resulting in superior performance compared to existing methods.',
-    url: 'https://github.com/RyanStark223232/Pose_PD_Diagnosis',
+    url: 'https://github.com/RyanStark223232/work-porfolio-hotmob',
     image: porfolioImage3,
   },
   {
@@ -205,13 +205,13 @@ export const education: TimelineItem[] = [
     location: 'The Chinese University (HK)',
     title: 'BSc (Hons) in Computer Science',
     content: <p>
-    GPA: 3.85 <br></br>
-    Scholarship/Award: <br></br>
-    ● Gold Award for Outstanding Academic Performance <br></br>
-    ● Prof SC Loh Scholarship for CSE <br></br>
-    ● Li Po Chun Charit T Fund UGD <br></br>
-    ● Yu To Sang Memorial Scholarship 2019/20 <br></br>
-    ● ELITE Stream Scholarship <br></br>
+    GPA: 3.85 <br/>
+    Scholarship/Award: <br/>
+    ● Gold Award for Outstanding Academic Performance <br/>
+    ● Prof SC Loh Scholarship for CSE <br/>
+    ● Li Po Chun Charit T Fund UGD <br/>
+    ● Yu To Sang Memorial Scholarship 2019/20 <br/>
+    ● ELITE Stream Scholarship <br/>
     ● CodeVita 2018 Hong Kong 1st runner-up (Python & C)
     </p>,
   }
@@ -257,7 +257,7 @@ export const contact: ContactSection = {
     {
       type: ContactType.Github,
       text: 'RyanStark223232',
-      href: 'https://github.com/RyanStark223232/',
+      href: 'https://github.com/RyanStark223232',
     },
     {
       type: ContactType.Fiverr,
