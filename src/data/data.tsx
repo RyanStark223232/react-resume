@@ -225,7 +225,7 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         ● Transformed web data processing with GPT-2 models, boosting crawling capacity by 10x at half the cost. <br/><br/>
-        ● Captivated Prudential HK's Business Intelligence Team with innovative projects, such as fraud prediction using deep learning and revamping data processing system. <br/><br/>
+        ● Captivated Client's (Global Insurance Company) Business Intelligence Team with innovative projects, such as fraud prediction using deep learning and revamping data processing system. <br/><br/>
         ● Automated company's data pipeline with Airflow, Apache Beam, and Google Cloud, enhancing efficiency and modularizing processes. <br/><br/>
         ● Created impactful dashboards highlighting exceptional behavior in subscribed emails, browsing patterns, and location-based data. <br/><br/>
         ● For more detail, download my <a href="document/work-porfolio-hotmob-downloadable.pdf" style={{ color:'SteelBlue'}}>Porfolio Summary PDF</a>.
