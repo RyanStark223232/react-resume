@@ -6,6 +6,8 @@ import porfolioImage1 from '../images/portfolio/portfolio-1.png';
 import porfolioImage2 from '../images/portfolio/portfolio-2.gif';
 import porfolioImage3 from '../images/portfolio/portfolio-3.gif';
 import porfolioImage4 from '../images/portfolio/portfolio-4.png';
+import porfolioImage5 from '../images/portfolio/portfolio-5.png';
+import porfolioImage6 from '../images/portfolio/portfolio-6.png';
 
 import {
   About,
@@ -173,6 +175,18 @@ export const skills: SkillGroup[] = [
 ];
 
 export const portfolioItems: PortfolioItem[] = [
+  {
+    title: 'Mass-Cover-Letter-Writer',
+    description: 'Automated Tailored Cover Letters: Web Crawling and ChatGPT Combine to Maximize Job Application Success. Save Time, Stand Out!',
+    url: 'https://github.com/RyanStark223232/Mass-Cover-Letter-Writer',
+    image: porfolioImage6,
+  },
+  {
+    title: 'Mass-Templated-Document-Processing',
+    description: 'Effortless Mass Document Conversion: Unleash ChatGPT\'s Power with Template-Based Solution and Streamlined Processing.',
+    url: 'https://github.com/RyanStark223232/Mass-Templated-Document-Processing',
+    image: porfolioImage5,
+  },
   {
     title: 'FreeChatGPT-Mimic-API',
     description: 'API allows you to seamlessly integrate ChatGPT into any simple script, giving you the power to perform tasks such as writing resumes, classifying local directories, and simple Q&A. Especially for people living in places where ChatGPT is now accessible and have a hard time paying for the service.',
