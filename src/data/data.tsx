@@ -66,12 +66,12 @@ export const skills: SkillGroup[] = [
     name: 'Spoken languages',
     skills: [
       {
-        name: 'English (8.5 is also the IELTS Score)',
-        level: 8.5,
+        name: 'English (8 is also the IELTS Score)',
+        level: 8,
       },
       {
         name: 'Cantonese',
-        level: 8.5,
+        level: 8,
       },
       {
         name: 'Mandarin',
@@ -233,6 +233,12 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
+    date: 'June 2023 - Now',
+    location: 'The Chinese University of Hong Kong Psychiatry Department',
+    title: 'Part-time Research Assistant',
+    content: (<p/>),
+  },
+  {
     date: 'July 2021 - June 2023',
     location: 'Hotmob Limited',
     title: 'Data Scientist',
@@ -274,14 +280,19 @@ export const contact: ContactSection = {
       href: 'https://github.com/RyanStark223232',
     },
     {
-      type: ContactType.Fiverr,
-      text: 'fiverr.com/ryanstark223232',
-      href: 'https://www.fiverr.com/ryanstark223232',
+      type: ContactType.LinkedIn,
+      text: 'Geoffrey Wong',
+      href: 'https://www.linkedin.com/in/geoffrey-wong-861b51169/',
     },
     {
       type: ContactType.Medium,
       text: 'medium.com/@ryan5tark223232',
       href: 'https://medium.com/@ryan5tark223232',
+    },
+    {
+      type: ContactType.Fiverr,
+      text: 'fiverr.com/ryanstark223232',
+      href: 'https://www.fiverr.com/ryanstark223232',
     },
   ],
 };
