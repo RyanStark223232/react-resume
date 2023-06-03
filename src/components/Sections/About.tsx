@@ -14,7 +14,7 @@ const About: FC = memo(() => {
   const handleSendRequest = () => {
     setIsLoading(true);
 
-    const url = `http://34.125.239.35:7860/?prompt=${encodeURIComponent(text)}`;
+    const url = `https://asia-east2-hip-graph-388614.cloudfunctions.net/poe-try?prompt=${encodeURIComponent(text)}`;
     console.log(url);
     // Perform the GET request using the URL
     // You can use libraries like axios or fetch to make the request
@@ -24,7 +24,6 @@ const About: FC = memo(() => {
       .then(response => response.json())
       .then(data => {
         // Handle the response data
-        console.log(data);
         setResponse(data); // Store the response
         setIsLoading(false);
       })
