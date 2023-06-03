@@ -14,7 +14,7 @@ const About: FC = memo(() => {
   const handleSendRequest = () => {
     setIsLoading(true);
 
-    const url = `https://34.125.239.35:7860/?prompt=${encodeURIComponent(text)}`;
+    const url = `http://34.125.239.35:7860/?prompt=${encodeURIComponent(text)}`;
     console.log(url);
     // Perform the GET request using the URL
     // You can use libraries like axios or fetch to make the request
