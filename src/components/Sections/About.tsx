@@ -8,29 +8,15 @@ import Socials from '../Socials';
 
 const About: FC = memo(() => {
   const [text, setText] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const [response, setResponse] = useState('');
 
   const handleSendRequest = () => {
-    setIsLoading(true);
 
     const url = `https://asia-east2-hip-graph-388614.cloudfunctions.net/poe-try?prompt=${encodeURIComponent(text)}`;
     console.log(url);
 
-    // Perform the GET request using the URL
-    fetch(url)
-      .then(response => response.json())
-      .then(resp => {
-        // Handle the response data
-        setResponse(resp); // Store the response
-        setIsLoading(false);
-      })
-      .catch(error => {
-        // Handle any errors
-        console.error(error);
-        setResponse("Data Fetching Failed...");
-        setIsLoading(false);
-      });
+    // Open a new tab with the URL
+    window.open(url, '_blank');
+
   };
 
   const handleInputChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -68,8 +54,8 @@ const About: FC = memo(() => {
               <textarea
                 className="bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm w-full justify-center"
                 onChange={handleInputChange}
-                placeholder="Enter your text here..."
-                rows={1}
+                placeholder="Ask me anything like an interview... ( Hijacked free ChatGPT GUI for This...not very stable >.0 )"
+                rows={2}
                 value={text}
               ></textarea>
               <button
@@ -78,10 +64,6 @@ const About: FC = memo(() => {
               >
                 Send
               </button>
-            </div>
-            <div className="bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm w-full justify-center">
-              {isLoading && <p>Loading...</p>}
-              {!isLoading && response && <p>{response}</p>}
             </div>
           </div>
         </div>
