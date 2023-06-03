@@ -16,15 +16,13 @@ const About: FC = memo(() => {
 
     const url = `https://asia-east2-hip-graph-388614.cloudfunctions.net/poe-try?prompt=${encodeURIComponent(text)}`;
     console.log(url);
-    // Perform the GET request using the URL
-    // You can use libraries like axios or fetch to make the request
 
-    // Example using fetch:
+    // Perform the GET request using the URL
     fetch(url)
       .then(response => response.json())
-      .then(data => {
+      .then(resp => {
         // Handle the response data
-        setResponse(data); // Store the response
+        setResponse(resp); // Store the response
         setIsLoading(false);
       })
       .catch(error => {
