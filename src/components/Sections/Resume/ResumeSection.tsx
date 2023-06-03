@@ -6,7 +6,7 @@ interface ResumeSectionProps {
 }
 
 const ResumeSection: FC<PropsWithChildren<ResumeSectionProps>> = memo(({title, children}) => {
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <div className="grid grid-cols-1 gap-y-4 py-8 first:pt-0 last:pb-0 md:grid-cols-2">
