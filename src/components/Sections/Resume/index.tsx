@@ -1,6 +1,6 @@
 import { FC, memo } from 'react';
 
-import { education, experience, SectionId, skills, skill_summary } from '../../../data/data';
+import { education, experience, certificate, SectionId, skills, skill_summary } from '../../../data/data';
 import Section from '../../Layout/Section';
 import ResumeSection from './ResumeSection';
 import { SkillGroup } from './Skills';
@@ -17,12 +17,17 @@ const Resume: FC = memo(() => {
               <TimelineItem item={item} key={`${item.title}-${index}`} />
             ))}
           </ResumeSection>
-          <ResumeSection title="Work">
+          <ResumeSection defaultExpanded={false} title="Study & Certificate">
+            {certificate.map((item, index) => (
+              <TimelineItem item={item} key={`${item.title}-${index}`} />
+            ))}
+          </ResumeSection>
+          <ResumeSection defaultExpanded={true} title="Work">
             {experience.map((item, index) => (
               <TimelineItem item={item} key={`${item.title}-${index}`} />
             ))}
           </ResumeSection>
-          <ResumeSection title="Skills">
+          <ResumeSection defaultExpanded={false} title="Skills">
             <p className="pb-8 text-white">{skill_summary}</p>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               {skills.map((skillgroup, index) => (

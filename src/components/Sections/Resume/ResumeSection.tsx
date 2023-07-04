@@ -3,10 +3,11 @@ import {FC, memo, PropsWithChildren, useState} from 'react';
 interface ResumeSectionProps {
   title: string;
   children: Array<any>;
+  defaultExpanded?: boolean;
 }
 
-const ResumeSection: FC<PropsWithChildren<ResumeSectionProps>> = memo(({title, children}) => {
-  const [expanded, setExpanded] = useState(true);
+const ResumeSection: FC<PropsWithChildren<ResumeSectionProps>> = memo(({title, children, defaultExpanded = true}) => {
+  const [expanded, setExpanded] = useState(defaultExpanded);
 
   return (
     <div className="grid grid-cols-1 gap-y-4 py-8 first:pt-0 last:pb-0 md:grid-cols-2">

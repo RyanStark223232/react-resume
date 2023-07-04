@@ -40,8 +40,9 @@ export const heroData: About = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a dynamic <strong className="text-stone-100">Data Scientist</strong> with a <strong className="text-stone-100">Full-Stack</strong> flair. 
-        Seasoned in the trenches of startups, I've mastered the art of Machine Learning + collecting, processing, and presenting data 🤔.
+        I'm a dynamic <strong className="text-stone-100">Data Scientist</strong> with a <strong className="text-stone-100">Full-Stack</strong> flair.<br/>
+        Seasoned in the trenches of startups, I've mastered the art of <strong className="text-stone-100"> Collecting, Processing, and Presenting </strong> data🤔.<br/>
+        <strong className="text-stone-100"> Google Certified ML Engineer </strong> and exploring <strong className="text-stone-100"> Large Language Models</strong>.
       </p>
     </>
   ),
@@ -60,7 +61,7 @@ export const heroData: About = {
   ],
 };
 
-export const skill_summary = "Machine Learning, Data Visualization, Data Engineering, Algorithm Design";
+export const skill_summary = "Machine Learning, Data Visualization, Data Engineering, Algorithm Design, MLOps, Finetuning Large Language Model";
 export const skills: SkillGroup[] = [
   {
     name: 'Spoken languages',
@@ -261,6 +262,29 @@ export const experience: TimelineItem[] = [
         ● Performed Web Crawling on Multiple Art-Sharing Websites to Collect Sample 3D Model Data <br></br>
         ● Built Generator that Converts 2D Images into 3D Models <br></br>
       </p>
+    ),
+  },
+];
+
+export const certificate: TimelineItem[] = [
+  {
+    date: 'June 2023 - June 2025',
+    location: 'Google Cloud Certified',
+    title: 'Professional Machine Learning Engineer',
+    content: 
+    <a href="https://google.accredible.com/40a5196e-5ff5-43fa-b7e7-b6b25939faa7"><img 
+      alt="Professional Machine Learning Engineer" 
+      src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/76397785"
+    /></a>,
+  },
+  {
+    date: 'June 2023 Onward',
+    location: 'Cloud Skill Boost',
+    title: 'Google\'s Large Language Model (LLM) Learning Path',
+    content: (
+      <a href="https://www.cloudskillsboost.google/public_profiles/2fec738c-c5ed-4828-9be9-700b4a7de855">
+        <img alt="GenAI Path" src="images/GenAI_Path_Completion.png"/>
+      </a>
     ),
   },
 ];
