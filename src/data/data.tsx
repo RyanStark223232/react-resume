@@ -48,7 +48,7 @@ export const heroData: About = {
   ),
   actions: [
     {
-      href: '/document/CV 2023-05-15.pdf',
+      href: '/document/CV.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -285,6 +285,14 @@ export const certificate: TimelineItem[] = [
       <a href="https://www.cloudskillsboost.google/public_profiles/2fec738c-c5ed-4828-9be9-700b4a7de855">
         <img alt="GenAI Path" src="images/GenAI_Path_Completion.png"/>
       </a>
+    ),
+  },
+  {
+    date: 'Auguest 2019 Onward',
+    location: 'AWS',
+    title: 'Dive into Deep Learning Using MXNet Workshop',
+    content: (
+      <img alt="MXNet Cert" src="images/MXNet_Cert.png"/>
     ),
   },
 ];
