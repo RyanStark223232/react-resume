@@ -1,6 +1,6 @@
 import { FC, memo } from 'react';
 
-import { education, experience, certificate, SectionId, skills, skill_summary } from '../../../data/data';
+import { education, experience, certificate, SectionId, skills, skill_summary, cert_summary } from '../../../data/data';
 import Section from '../../Layout/Section';
 import ResumeSection from './ResumeSection';
 import { SkillGroup } from './Skills';
@@ -18,6 +18,7 @@ const Resume: FC = memo(() => {
             ))}
           </ResumeSection>
           <ResumeSection defaultExpanded={false} title="Study & Certificate">
+            <p className="pb-8 text-white">{cert_summary}</p>
             {certificate.map((item, index) => (
               <TimelineItem item={item} key={`${item.title}-${index}`} />
             ))}

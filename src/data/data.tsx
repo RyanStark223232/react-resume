@@ -42,7 +42,8 @@ export const heroData: About = {
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a dynamic <strong className="text-stone-100">Data Scientist</strong> with a <strong className="text-stone-100">Full-Stack</strong> flair.<br/>
         Seasoned in the trenches of startups, I've mastered the art of <strong className="text-stone-100"> Collecting, Processing, and Presenting </strong> data🤔.<br/>
-        <strong className="text-stone-100"> Google Certified ML Engineer </strong> and exploring <strong className="text-stone-100"> Large Language Models</strong>.
+        Google Certified <strong className="text-stone-100"> Professional ML Engineer </strong> and <strong className="text-stone-100"> Project Manager </strong>.<br/>
+        Exploring <strong className="text-stone-100"> Large Language Models</strong>.
       </p>
     </>
   ),
@@ -266,6 +267,7 @@ export const experience: TimelineItem[] = [
   },
 ];
 
+export const cert_summary = "Professional Machine Learning Engineer, Google Project Management Professional Certificate, Large Language Model Learning Path, MXNet Workshop"
 export const certificate: TimelineItem[] = [
   {
     date: 'June 2023 - June 2025',
@@ -275,6 +277,16 @@ export const certificate: TimelineItem[] = [
     <a href="https://google.accredible.com/40a5196e-5ff5-43fa-b7e7-b6b25939faa7"><img 
       alt="Professional Machine Learning Engineer" 
       src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/76397785"
+    /></a>,
+  },
+  {
+    date: 'July 2023 Onward',
+    location: 'Coursera',
+    title: 'Google Project Management Certificate',
+    content: 
+    <a href="https://www.credly.com/badges/7aa1ce4d-666c-4065-bd91-54066062e5a2/public_url"><img 
+      alt="Google Project Management Certificate" 
+      src="images/google-project-management-certificate.2.png"
     /></a>,
   },
   {
