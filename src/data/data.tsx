@@ -8,6 +8,7 @@ import porfolioImage3 from '../images/portfolio/portfolio-3.gif';
 import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.png';
+import porfolioImage7 from '../images/portfolio/portfolio-7.png';
 
 import {
   About,
@@ -173,10 +174,37 @@ export const skills: SkillGroup[] = [
         level: 3,
       }
     ],
+  },
+  {
+    name: 'MLOps',
+    skills: [
+      {
+        name: 'Airflow',
+        level: 9,
+      },
+      {
+        name: 'MLflow',
+        level: 7,
+      },
+      {
+        name: 'Databricks',
+        level: 5,
+      },
+      {
+        name: 'Tensorflow Extended',
+        level: 4,
+      }
+    ],
   }
 ];
 
 export const portfolioItems: PortfolioItem[] = [
+  {
+    title: 'LLM-Trainer',
+    description: 'Notebooks detailing how to use LoRA to finetune Large Language Model. Run a dummy task to create a virtual assistant who speaks like Rick from Rick and Morty. Added logging using MLflow',
+    url: 'https://github.com/RyanStark223232/LLM-Trainer',
+    image: porfolioImage7,
+  },
   {
     title: 'Mass-Cover-Letter-Writer',
     description: 'Automated Tailored Cover Letters: Web Crawling and ChatGPT Combine to Maximize Job Application Success. Save Time, Stand Out!',
