@@ -9,6 +9,7 @@ import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.png';
 import porfolioImage7 from '../images/portfolio/portfolio-7.png';
+import porfolioImage8 from '../images/portfolio/portfolio-8.gif';
 
 import {
   About,
@@ -199,6 +200,12 @@ export const skills: SkillGroup[] = [
 ];
 
 export const portfolioItems: PortfolioItem[] = [
+  {
+    title: 'Colab-AnimateDiff',
+    description: 'A notebook on how to run AnimateDiff on Colab. All credit goes to https://animatediff.github.io/.',
+    url: 'https://github.com/RyanStark223232/Colab-AnimateDiff',
+    image: porfolioImage8
+  },
   {
     title: 'LLM-Trainer',
     description: 'Notebooks detailing how to use LoRA to finetune Large Language Model. Run a dummy task to create a virtual assistant who speaks like Rick from Rick and Morty. Added logging using MLflow',
