@@ -54,12 +54,12 @@ const About: FC = memo(() => {
               <textarea
                 className="bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm w-full justify-center"
                 onChange={handleInputChange}
-                placeholder="Ask me anything like an interview... ( Hijacked free ChatGPT GUI for This...not very stable >.0 )"
+                placeholder="Ask me anything like an interview...(Hijacked free ChatGPT GUI for This...not very stable >.0, and needs to wait around 15 sec)"
                 rows={2}
                 value={text}
               ></textarea>
               <button
-                className="ml-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-4 py-2"
+                className="ml-2 bg-gray-500 hover:bg-orange-600 text-white rounded-lg px-4 py-2"
                 onClick={handleSendRequest}
               >
                 Send

@@ -73,6 +73,7 @@ export interface PortfolioItem {
   title: string;
   description: string;
   url: string;
+  skills: string;
   image: string | StaticImageData;
 }
 

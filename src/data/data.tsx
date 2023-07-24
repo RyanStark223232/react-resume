@@ -10,6 +10,7 @@ import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.png';
 import porfolioImage7 from '../images/portfolio/portfolio-7.png';
 import porfolioImage8 from '../images/portfolio/portfolio-8.gif';
+import porfolioImage9 from '../images/portfolio/portfolio-9.png';
 
 import {
   About,
@@ -201,50 +202,65 @@ export const skills: SkillGroup[] = [
 
 export const portfolioItems: PortfolioItem[] = [
   {
+    title: 'Optimizing Ad Serving with ML',
+    description: 'This is the entrance test that I was required to complete prior to assuming my position as a Data Scientist at Hotmob. I was able to outperform other Data Scientists with over five years of experience.',
+    skills: 'Skills: Data Analysis, Hyperparameter Tuning, Explainable ML, Business Insights',
+    url: 'https://ryanstark223232.github.io/Hotmob-Entrance-Test/Analyst_Report.html',
+    image: porfolioImage9
+  },
+  {
     title: 'Colab-AnimateDiff',
     description: 'A notebook on how to run AnimateDiff on Colab. All credit goes to https://animatediff.github.io/.',
+    skills: 'Skills: Stable Diffusion',
     url: 'https://github.com/RyanStark223232/Colab-AnimateDiff',
     image: porfolioImage8
   },
   {
     title: 'LLM-Trainer',
     description: 'Notebooks detailing how to use LoRA to finetune Large Language Model. Run a dummy task to create a virtual assistant who speaks like Rick from Rick and Morty. Added logging using MLflow',
+    skills: 'Skills: Fine-Tuning LLM',
     url: 'https://github.com/RyanStark223232/LLM-Trainer',
     image: porfolioImage7,
   },
   {
     title: 'Mass-Cover-Letter-Writer',
     description: 'Automated Tailored Cover Letters: Web Crawling and ChatGPT Combine to Maximize Job Application Success. Save Time, Stand Out!',
+    skills: 'Skills: Web Crawling, Retrieval Augmented Generation',
     url: 'https://github.com/RyanStark223232/Mass-Cover-Letter-Writer',
     image: porfolioImage6,
   },
   {
     title: 'Mass-Templated-Document-Processing',
     description: 'Effortless Mass Document Conversion: Unleash ChatGPT\'s Power with Template-Based Solution and Streamlined Processing.',
+    skills: 'Skills: Web Crawling, Retrieval Augmented Generation',
     url: 'https://github.com/RyanStark223232/Mass-Templated-Document-Processing',
     image: porfolioImage5,
   },
   {
     title: 'FreeChatGPT-Mimic-API',
-    description: 'API allows you to seamlessly integrate ChatGPT into any simple script, giving you the power to perform tasks such as writing resumes, classifying local directories, and simple Q&A. Especially for people living in places where ChatGPT is now accessible and have a hard time paying for the service.',
+    description: 'API allows you to seamlessly integrate ChatGPT into any simple script for free. Especially helpful for people living in places where ChatGPT is now accessible and have a hard time paying for the service.',
+    skills: 'Skills: Web Crawling',
     url: 'https://github.com/RyanStark223232/FreeChatGPT-Mimic-API',
     image: porfolioImage4,
   },
   {
     title: 'Hotmob Full-Stack Data Scientist Portfolio',
-    description: 'Developed a state-of-the-art AI system that accurately diagnoses the severity of Parkinson\'s disease by analyzing videos of patients performing actions in the UPDRS test, resulting in superior performance compared to existing methods.',
+    description: 'A collection of work that I cannot fully disclose. However, I have documented highlights and results to demonstrate my capability.',
+    skills: 'Skills: Data Engineering + Science + Analysis',
     url: 'https://github.com/RyanStark223232/work-porfolio-hotmob',
     image: porfolioImage3,
   },
   {
     title: 'Parkinson\'s Diagnosis from Video of Actions',
-    description: 'Developed a state-of-the-art AI system that accurately diagnoses the severity of Parkinson\'s disease by analyzing videos of patients performing actions in the UPDRS test, resulting in superior performance compared to existing methods.',
+    description: 'Developed AI system that accurately diagnoses the severity of Parkinson\'s disease by analyzing videos of patients performing actions in the UPDRS test, resulting in superior performance compared to existing methods.',
+    skills: 'Skills: Computer Vision, Medical Research',
     url: 'https://github.com/RyanStark223232/Pose_PD_Diagnosis',
     image: porfolioImage2,
   },
   {
-    title: 'Card Shuffling Prediction with AI (Recurrent Neural Network)',
+    title: 'Card Shuffling Prediction with AI',
     description: 'Utilized Recurrent Neural Network to predict outcome of riffle card shuffling, showcasing room for improvement as AI consistently outperformed existing algorithmic approaches. Investigated reasons for improvement, but a conclusive explanation was not reached.',
+    skills: 'Skills: Recurrent Neural Network',
     url: 'https://github.com/RyanStark223232/Card_Shuffle_Prediction',
     image: porfolioImage1,
   },
