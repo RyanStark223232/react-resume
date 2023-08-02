@@ -11,6 +11,7 @@ import porfolioImage6 from '../images/portfolio/portfolio-6.png';
 import porfolioImage7 from '../images/portfolio/portfolio-7.png';
 import porfolioImage8 from '../images/portfolio/portfolio-8.gif';
 import porfolioImage9 from '../images/portfolio/portfolio-9.png';
+import porfolioImage10 from '../images/portfolio/portfolio-10.png';
 
 import {
   About,
@@ -201,6 +202,13 @@ export const skills: SkillGroup[] = [
 ];
 
 export const portfolioItems: PortfolioItem[] = [
+  {
+    title: 'Youtube Recommendation System Study',
+    description: 'This document serves as an experimental notebook outlining the process of replicating a simplified version of the YouTube Recommendation Algorithm.',
+    skills: 'Skills: Deep Learning, Recommendation System',
+    url: 'https://ryanstark223232.github.io/Youtube-Recommendation-Study/Recommendation.html',
+    image: porfolioImage10
+  },
   {
     title: 'Optimizing Ad Serving with ML',
     description: 'This is the entrance test that I was required to complete prior to assuming my position as a Data Scientist at Hotmob. I was able to outperform other Data Scientists with over five years of experience.',
