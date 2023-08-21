@@ -1,27 +1,12 @@
 import { ChevronDownIcon } from '@heroicons/react/outline';
 import classNames from 'classnames';
-import { FC, memo, useState } from 'react';
+import { FC, memo } from 'react';
 
 import { heroData, SectionId } from '../../data/data';
 import Section from '../Layout/Section';
 import Socials from '../Socials';
 
 const About: FC = memo(() => {
-  const [text, setText] = useState('');
-
-  const handleSendRequest = () => {
-
-    const url = `https://asia-east2-hip-graph-388614.cloudfunctions.net/poe-try?prompt=${encodeURIComponent(text)}`;
-    console.log(url);
-
-    // Open a new tab with the URL
-    window.open(url, '_blank');
-
-  };
-
-  const handleInputChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setText(event.target.value);
-  };
 
   const { name, description, actions } = heroData;
 
@@ -49,21 +34,6 @@ const About: FC = memo(() => {
                   {Icon && <Icon className="h-5 w-5 text-white sm:h-6 sm:w-6" />}
                 </a>
               ))}
-            </div>
-            <div className="flex items-center w-full">
-              <textarea
-                className="bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm w-full justify-center"
-                onChange={handleInputChange}
-                placeholder="Ask me anything like an interview...(Hijacked free ChatGPT GUI for This...not very stable >.0, and needs to wait around 15 sec)"
-                rows={2}
-                value={text}
-              ></textarea>
-              <button
-                className="ml-2 bg-gray-500 hover:bg-orange-600 text-white rounded-lg px-4 py-2"
-                onClick={handleSendRequest}
-              >
-                Send
-              </button>
             </div>
           </div>
         </div>

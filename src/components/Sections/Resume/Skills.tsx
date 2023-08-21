@@ -25,7 +25,7 @@ export const Skill: FC<{ skill: SkillType }> = memo(({ skill }) => {
     max,
   ]);
 
-  const expert_lv = (percentage >= 75) ? "Proficient" : (percentage >= 50) ? "Experienced" : "Familiar";
+  const expert_lv = (percentage >= 75) ? "Proficient" : (percentage >= 50) ? "Familiar" : "Basic Knowledge";
 
   return (
     <div className="flex flex-col">

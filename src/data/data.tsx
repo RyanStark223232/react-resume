@@ -90,11 +90,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Google Cloud Platform',
-        level: 8,
+        level: 9,
       },
       {
         name: 'Azure',
-        level: 5,
+        level: 6,
       },
       {
         name: 'AWS',
@@ -111,11 +111,11 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Scikit-Learn',
-        level: 8,
+        level: 9,
       },
       {
         name: 'Keras',
-        level: 7,
+        level: 9,
       },
       {
         name: 'Tensorflow',
@@ -152,12 +152,12 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
-        name: 'Hadoop',
-        level: 3,
+        name: 'Spark',
+        level: 6,
       },
       {
-        name: 'Spark',
-        level: 3,
+        name: 'Hadoop',
+        level: 5,
       }
     ],
   },
@@ -174,7 +174,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'PowerBI',
-        level: 3,
+        level: 7,
       }
     ],
   },
@@ -191,7 +191,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Databricks',
-        level: 5,
+        level: 4,
       },
       {
         name: 'Tensorflow Extended',
