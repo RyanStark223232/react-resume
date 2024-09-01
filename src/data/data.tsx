@@ -279,7 +279,7 @@ export const education: TimelineItem[] = [
     date: 'Sep 2024 - Now',
     location: 'University of Calgary (CA)',
     title: 'Master of Data Science and Analytics',
-    content: (<p/>),
+    content:,
   },
   {
     date: 'Sep 2017 - July 2021',
