@@ -25,7 +25,7 @@ import {
 } from './dataDef';
 
 export const homePageMeta: HomepageMeta = {
-  title: 'Geoffrey Wong Resume',
+  title: 'Geoffrey CV',
   description: "Credit: site built with Tim Baker's react resume template",
 };
 
@@ -40,7 +40,7 @@ export const SectionId = {
 export type SectionId = typeof SectionId[keyof typeof SectionId];
 
 export const heroData: About = {
-  name: `Geoffrey Wong`,
+  name: `Geoffrey`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -72,8 +72,8 @@ export const skills: SkillGroup[] = [
     name: 'Spoken languages',
     skills: [
       {
-        name: 'English (8 is also the IELTS Score)',
-        level: 8,
+        name: 'English (8.5 is also the IELTS Score)',
+        level: 8.5,
       },
       {
         name: 'Cantonese',
@@ -276,7 +276,13 @@ export const portfolioItems: PortfolioItem[] = [
 
 export const education: TimelineItem[] = [
   {
-    date: 'Sep 2017',
+    date: 'Sep 2024 - Now',
+    location: 'University of Calgary (CA)',
+    title: 'Master of Data Science and Analytics',
+    content: (<p/>),
+  },
+  {
+    date: 'Sep 2017 - July 2021',
     location: 'The Chinese University (HK)',
     title: 'BSc (Hons) in Computer Science',
     content: <p>
