@@ -66,7 +66,7 @@ export const heroData: About = {
   ],
 };
 
-export const skill_summary = "Machine Learning, Data Visualization, Data Engineering, Algorithm Design, MLOps, Finetuning Large Language Model";
+export const skill_summary = "- Machine Learning\n- Data Visualization\n- Data Engineering\n- Algorithm Design\n- MLOps\n- Finetuning Large Language Model";
 export const skills: SkillGroup[] = [
   {
     name: 'Spoken languages',
@@ -77,7 +77,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Cantonese',
-        level: 8,
+        level: 8.5,
       },
       {
         name: 'Mandarin',
@@ -198,7 +198,24 @@ export const skills: SkillGroup[] = [
         level: 4,
       }
     ],
-  }
+  },
+  {
+    name: 'Data Analytic Language',
+    skills: [
+      {
+        name: 'SQL',
+        level: 9,
+      },
+      {
+        name: 'DAX (PowerBI)',
+        level: 7,
+      },
+      {
+        name: 'R',
+        level: 7,
+      },
+    ],
+  },
 ];
 
 export const portfolioItems: PortfolioItem[] = [
@@ -332,7 +349,7 @@ export const experience: TimelineItem[] = [
   },
 ];
 
-export const cert_summary = "Professional Machine Learning Engineer, Google Project Management Professional Certificate, Large Language Model Learning Path, MXNet Workshop"
+export const cert_summary = "- Professional Machine Learning Engineer\n- Google Project Management Professional Certificate\n- Large Language Model Learning Path\n- MXNet Workshop"
 export const certificate: TimelineItem[] = [
   {
     date: 'June 2023 - June 2025',
@@ -397,11 +414,6 @@ export const contact: ContactSection = {
       type: ContactType.Medium,
       text: 'medium.com/@ryan5tark223232',
       href: 'https://medium.com/@ryan5tark223232',
-    },
-    {
-      type: ContactType.Fiverr,
-      text: 'fiverr.com/ryanstark223232',
-      href: 'https://www.fiverr.com/ryanstark223232',
     },
   ],
 };

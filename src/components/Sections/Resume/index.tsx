@@ -18,7 +18,7 @@ const Resume: FC = memo(() => {
             ))}
           </ResumeSection>
           <ResumeSection defaultExpanded={false} title="Study & Certificate">
-            <p className="pb-8 text-white">{cert_summary}</p>
+            <p style={{ paddingTop: '8px', color: 'white', whiteSpace: 'pre-line' }}>{cert_summary}</p>
             {certificate.map((item, index) => (
               <TimelineItem item={item} key={`${item.title}-${index}`} />
             ))}
@@ -29,7 +29,7 @@ const Resume: FC = memo(() => {
             ))}
           </ResumeSection>
           <ResumeSection defaultExpanded={false} title="Skills">
-            <p className="pb-8 text-white">{skill_summary}</p>
+            <p style={{ paddingTop: '8px', color: 'white', whiteSpace: 'pre-line' }}>{skill_summary}</p>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               {skills.map((skillgroup, index) => (
                 <SkillGroup key={`${skillgroup.name}-${index}`} skillGroup={skillgroup} />
