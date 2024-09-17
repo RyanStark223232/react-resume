@@ -44,15 +44,20 @@ const HomePageWrapper: FC = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    const handleTimeUpdate = () => {
-      // Set the background image index based on the current time
-      setBackgroundImageIndex(prevIndex => (prevIndex + 1) % 7);
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const windowHeight = window.innerHeight;
+      const totalHeight = document.body.clientHeight;
+
+      // Set the background image index based on the current scroll position
+      const newIndex = Math.floor((scrollTop / (totalHeight - windowHeight)) * 6.5);
+      setBackgroundImageIndex(newIndex);
     };
 
-    const interval = setInterval(handleTimeUpdate, 2500); // Update every 1 second
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      clearInterval(interval); // Clear the interval on component unmount
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
