@@ -149,11 +149,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Apache Beam',
-        level: 7,
+        level: 8,
       },
       {
         name: 'Spark',
-        level: 6,
+        level: 7,
       },
       {
         name: 'Hadoop',
@@ -317,7 +317,7 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'June 2023 - Now',
+    date: 'June 2023 - August 2024',
     location: 'The Chinese University of Hong Kong Psychiatry Department',
     title: 'Part-time Research Assistant',
     content: (<p/>),
