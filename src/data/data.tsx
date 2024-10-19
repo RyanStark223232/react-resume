@@ -12,6 +12,7 @@ import porfolioImage7 from '../images/portfolio/portfolio-7.png';
 import porfolioImage8 from '../images/portfolio/portfolio-8.gif';
 import porfolioImage9 from '../images/portfolio/portfolio-9.png';
 import porfolioImage10 from '../images/portfolio/portfolio-10.png';
+import porfolioImage11 from '../images/portfolio/portfolio-11.png';
 
 import {
   About,
@@ -44,10 +45,10 @@ export const heroData: About = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a dynamic <strong className="text-stone-100">Data Scientist</strong> with a <strong className="text-stone-100">Full-Stack</strong> flair.<br/>
+        I'm a dynamic <strong className="text-stone-100">Full-Stack Data Scientist</strong>.<br/>
         Seasoned in the trenches of startups, I've mastered the art of <strong className="text-stone-100"> Collecting, Processing, and Presenting </strong> data🤔.<br/>
         Google Certified <strong className="text-stone-100"> Professional ML Engineer </strong> and <strong className="text-stone-100"> Project Manager </strong>.<br/>
-        Exploring <strong className="text-stone-100"> Large Language Models</strong>.
+        Exploring <strong className="text-stone-100">Causal ML</strong>.
       </p>
     </>
   ),
@@ -220,6 +221,13 @@ export const skills: SkillGroup[] = [
 
 export const portfolioItems: PortfolioItem[] = [
   {
+    title: 'Visualization-based Study on Airline On Time Performance in US',
+    description: 'School project in UofC focusing on finding insights using data visualization.',
+    skills: 'Skills: Data Visualization',
+    url: 'https://uofc601l02g7.github.io/UofC601L02_Project/',
+    image: porfolioImage11
+  },
+  {
     title: 'Youtube Recommendation System Study',
     description: 'This document serves as an experimental notebook outlining the process of replicating a simplified version of the YouTube Recommendation Algorithm.',
     skills: 'Skills: Deep Learning, Recommendation System',
@@ -319,8 +327,14 @@ export const experience: TimelineItem[] = [
   {
     date: 'June 2023 - August 2024',
     location: 'The Chinese University of Hong Kong Psychiatry Department',
-    title: 'Part-time Research Assistant',
-    content: (<p/>),
+    title: 'Part-time Research Assistant & Independent Developer',
+    content: (
+      <p>
+        ● Parkinson’s Diagnosis Research: Designed collection procedures for patient data that satisfy researchers’ demand for efficiency while maintaining a controlled experimental environment. <br/><br/>
+        ● Parkinson’s Diagnosis Research: Experimented with off-the-shelf AI products to eliminate personal information, reduce the complexity of the collected videos, and ensure prediction output did not overfit despite a small dataset. <br/><br/>
+        ● Natural Language Query Interface: Built chatbots capable of querying databases, answering questions with accurate information, and generating graphs using an agent-based Large Language Model (LLM).
+      </p>
+    ),
   },
   {
     date: 'July 2021 - June 2023',
@@ -328,10 +342,12 @@ export const experience: TimelineItem[] = [
     title: 'Data Scientist',
     content: (
       <p>
-        ● Transformed web data processing with GPT-2 models, boosting crawling capacity by 10x at half the cost. <br/><br/>
-        ● Captivated Client's (Global Insurance Company) Business Intelligence Team with innovative projects, such as fraud prediction using deep learning and revamping data processing system. <br/><br/>
-        ● Automated company's data pipeline with Airflow, Apache Beam, and Google Cloud, enhancing efficiency and modularizing processes. <br/><br/>
-        ● Created impactful dashboards highlighting exceptional behavior in subscribed emails, browsing patterns, and location-based data. <br/><br/>
+        ● Managed the development of two data dashboards and a Machine Learning client project. Completed projects on time despite tight schedules and captivated clients with explorations of future directions. <br/><br/>
+        ● Demonstrated proactive problem-solving skills by independently identifying inefficiencies in data pipelines and devising solutions with heuristic algorithms that improved scalability and memory usage by 14x and reduced the processing time by 50%.  <br/><br/>
+        ● Investigated the use of LLM in Personally Identifiable Information (PII) cleaning and web content understanding, and created systems that outperformed manual labeling services in speed and robustness. <br/><br/>
+        ● Leveraged web-scraping and transfer learning with GPT-2 for comprehensive website understanding. Extended capability to sentiment analysis, interest classification, and keyword extraction, while increasing capacity by more than 10 times with half of the cost. <br/><br/>
+        ● Impressed the Business Intelligence team of a global insurance company with client projects, including revamping their data processing system originally in SAS to PowerBI, training machine learning models to predict insurance fraud with Azure, and adding explainable ML to inference output,  establishing long-term collaborative relationships to this day. <br/><br/>
+        ● Fully automated data processing pipelines using Airflow. Removing the need for manual labor in monitoring data quality, updating ML models, and generating reports. <br/><br/>
         ● For more detail, download my <a href="document/work-porfolio-hotmob-downloadable.pdf" style={{ color:'SteelBlue'}}>Porfolio Summary PDF</a>.
       </p>
     ),
@@ -342,8 +358,9 @@ export const experience: TimelineItem[] = [
     title: 'AI Developer Summer Intern',
     content: (
       <p>
-        ● Performed Web Crawling on Multiple Art-Sharing Websites to Collect Sample 3D Model Data <br></br>
-        ● Built Generator that Converts 2D Images into 3D Models <br></br>
+        ● Performed Web Crawling with Selenium to Collect Images and 3D Model Data. <br></br>
+        ● Preprocessed 3D Mesh Data with Programmable Blender. <br></br>
+        ● Built a Voxel Generator that Converts 2D Images into 3D Models. <br></br>
       </p>
     ),
   },
@@ -397,8 +414,8 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'ryan5tark223232@gmail.com',
-      href: 'mailto:ryan5tark223232@gmail.com',
+      text: 'geoffreywonghin@gmail.com',
+      href: 'mailto:geoffreywonghin@gmail.com',
     },
     {
       type: ContactType.Github,
@@ -408,7 +425,7 @@ export const contact: ContactSection = {
     {
       type: ContactType.LinkedIn,
       text: 'Geoffrey Wong',
-      href: 'https://www.linkedin.com/in/geoffrey-wong-861b51169/',
+      href: 'https://www.linkedin.com/in/geoffreywonghin/',
     },
     {
       type: ContactType.Medium,

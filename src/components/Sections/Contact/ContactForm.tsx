@@ -31,7 +31,7 @@ const ContactForm: FC = memo(() => {
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
       const {name, message} = data;
-      const emailUrl = `mailto:ryan5tark223232@gmail.com?subject=Reached out from Resume Site - ${name} &body=${message}`;
+      const emailUrl = `mailto:geoffreywonghin@gmail.com?subject=Reached out from Resume Site - ${name} &body=${message}`;
       window.location.href = emailUrl;
     },
     [data]
