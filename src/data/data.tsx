@@ -9,7 +9,6 @@ import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.png';
 import porfolioImage7 from '../images/portfolio/portfolio-7.png';
-import porfolioImage8 from '../images/portfolio/portfolio-8.gif';
 import porfolioImage9 from '../images/portfolio/portfolio-9.png';
 import porfolioImage10 from '../images/portfolio/portfolio-10.png';
 import porfolioImage11 from '../images/portfolio/portfolio-11.png';
@@ -242,31 +241,24 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage9
   },
   {
-    title: 'Colab-AnimateDiff',
-    description: 'A notebook on how to run AnimateDiff on Colab. All credit goes to https://animatediff.github.io/.',
-    skills: 'Skills: Stable Diffusion',
-    url: 'https://github.com/RyanStark223232/Colab-AnimateDiff',
-    image: porfolioImage8
-  },
-  {
-    title: 'LLM-Trainer',
+    title: 'LLM-Trainer (LoRA)',
     description: 'Notebooks detailing how to use LoRA to finetune Large Language Model. Run a dummy task to create a virtual assistant who speaks like Rick from Rick and Morty. Added logging using MLflow',
     skills: 'Skills: Fine-Tuning LLM',
     url: 'https://github.com/RyanStark223232/LLM-Trainer',
     image: porfolioImage7,
   },
   {
-    title: 'Mass-Cover-Letter-Writer',
-    description: 'Automated Tailored Cover Letters: Web Crawling and ChatGPT Combine to Maximize Job Application Success. Save Time, Stand Out!',
-    skills: 'Skills: Web Crawling, Retrieval Augmented Generation',
-    url: 'https://github.com/RyanStark223232/Mass-Cover-Letter-Writer',
+    title: 'NowHere: a Mock Travelling Site',
+    description: 'My School Project about Software Engineering. My major responsibility is building the landing page and an Image Search for similar travelling destinations using TFJS & Transfer Learning, though it no longer works since Firebase and ML endpoint is expensive',
+    skills: 'Skills: Frontend, Machine Learning on Web',
+    url: 'https://nowhere-571c3.web.app/#/',
     image: porfolioImage6,
   },
   {
-    title: 'Mass-Templated-Document-Processing',
-    description: 'Effortless Mass Document Conversion: Unleash ChatGPT\'s Power with Template-Based Solution and Streamlined Processing.',
-    skills: 'Skills: Web Crawling, Retrieval Augmented Generation',
-    url: 'https://github.com/RyanStark223232/Mass-Templated-Document-Processing',
+    title: 'Causal-ML Study using DoWhy',
+    description: 'A self-study project on Causal ML using DoWhy and a dataset of US Birth Record in 2022. Investigating the treatment effectiveness of NICU to the survival of infant',
+    skills: 'Skills: Statistic, Causal ML',
+    url: 'https://ryanstark223232.github.io/causalStudy/',
     image: porfolioImage5,
   },
   {
