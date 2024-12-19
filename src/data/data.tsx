@@ -12,6 +12,7 @@ import porfolioImage7 from '../images/portfolio/portfolio-7.png';
 import porfolioImage9 from '../images/portfolio/portfolio-9.png';
 import porfolioImage10 from '../images/portfolio/portfolio-10.png';
 import porfolioImage11 from '../images/portfolio/portfolio-11.png';
+import porfolioImage12 from '../images/portfolio/portfolio-12.png';
 
 import {
   About,
@@ -219,6 +220,13 @@ export const skills: SkillGroup[] = [
 ];
 
 export const portfolioItems: PortfolioItem[] = [
+  {
+    title: 'GCP End-to-End Data Pipeline + Recommendation System',
+    description: 'School project in UofC focusing on demonstrating ability to create Machine Learning Applications on Cloud',
+    skills: 'Skills: Data Engineering, Machine Learning',
+    url: 'https://604project2-team03.github.io/GCP-Data-DevOps/',
+    image: porfolioImage12
+  },
   {
     title: 'Visualization-based Study on Airline On Time Performance in US',
     description: 'School project in UofC focusing on finding insights using data visualization.',
