@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic';
-import { FC, memo, useEffect, useState, useMemo } from 'react';
+import { FC, memo, useEffect, useState, CSSProperties } from 'react';
 
 import Page from '../components/Layout/Page';
 import Contact from '../components/Sections/Contact';
@@ -12,15 +12,7 @@ import { homePageMeta } from '../data/data';
 // eslint-disable-next-line react-memo/require-memo
 const Header = dynamic(() => import('../components/Sections/Header'), { ssr: false });
 
-interface Picture {
-  fileName: string;
-}
-
-interface HomePageProps {
-  pictures: Picture[];
-}
-
-const HomePageWrapper: FC<HomePageProps> = ({ children, pictures }) => {
+const HomePageWrapper: FC = ({ children }) => {
   const [backgroundImageIndex, setBackgroundImageIndex] = useState(0);
   const [imageUrls, setImageUrls] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -38,27 +30,24 @@ const HomePageWrapper: FC<HomePageProps> = ({ children, pictures }) => {
 
     const urls = generateImageUrls();
 
-    Promise.all(
-      urls.map((url) =>
-        new Promise<string>((resolve) => {
-          const image = new Image();
-          image.onload = () => {
-            resolve(url);
-          };
-          image.src = url;
-        })
-      )
+    Promise.all(urls.map((url) => new Promise((resolve) => {
+      const image = new Image();
+      image.onload = () => {
+        resolve(url);
+      };
+      image.src = url;
+    }))
     ).then((urls) => {
-      setImageUrls(urls);
+      setImageUrls(urls as string[]);
       setIsLoading(false);
     });
 
     // Preload all background images
-    pictures.forEach((picture) => {
+    urls.forEach((url) => {
       const img = new Image();
-      img.src = picture.fileName;
+      img.src = url;
     });
-  }, [pictures]);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -95,8 +84,24 @@ const HomePageWrapper: FC<HomePageProps> = ({ children, pictures }) => {
     ...backgroundImageStyle,
   };
 
+
+
+  // Update the extraBackgroundStyle object with explicit type annotation
+  const extraBackgroundStyle: CSSProperties = {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: -1,
+    backgroundImage: `url("/images/extra-background.jpg")`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+  };
+
   return (
     <div>
+      <div style={extraBackgroundStyle} />
       <div style={isLoading ? loadingStyle : loadedStyle}>
         <Page {...homePageMeta}>{children}</Page>
       </div>
@@ -105,11 +110,8 @@ const HomePageWrapper: FC<HomePageProps> = ({ children, pictures }) => {
 };
 
 const Home: FC = memo(() => {
-  // Example pictures data
-  const pictures: Picture[] = useMemo(() => [{ fileName: 'example1.jpg' }, { fileName: 'example2.jpg' }], []);
-
   return (
-    <HomePageWrapper pictures={pictures}>
+    <HomePageWrapper>
       <Header />
       <About />
       <Resume />
