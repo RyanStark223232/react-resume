@@ -327,7 +327,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'June 2023 - August 2024',
     location: 'The Chinese University of Hong Kong Psychiatry Department',
-    title: 'Part-time Research Assistant & Independent Developer',
+    title: 'Research Assistant',
     content: (
       <p>
         ● Parkinson’s Diagnosis Research: Designed collection procedures for patient data that satisfy researchers’ demand for efficiency while maintaining a controlled experimental environment. <br/><br/>
