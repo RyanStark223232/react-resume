@@ -44,11 +44,11 @@ export const heroData: About = {
   name: `Geoffrey`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a dynamic <strong className="text-stone-100">Full-Stack Data Scientist</strong>.<br/>
-        Seasoned in the trenches of startups, I've mastered the art of <strong className="text-stone-100"> Collecting, Processing, and Presenting </strong> data🤔.<br/>
-        Google Certified <strong className="text-stone-100"> Professional ML Engineer </strong> and <strong className="text-stone-100"> Project Manager </strong>.<br/>
-        Exploring <strong className="text-stone-100">Causal ML</strong>.
+      <p className="prose-sm text-black sm:prose-base lg:prose-lg">
+        I'm a dynamic <strong className="text-black">Full-Stack Data Scientist</strong>.<br/>
+        Seasoned in the trenches of startups, I've mastered the art of <strong className="text-black"> Collecting, Processing, and Presenting </strong> data🤔.<br/>
+        Google Certified <strong className="text-black"> Professional ML Engineer </strong> and <strong className="text-black"> Project Manager </strong>.<br/>
+        Exploring <strong className="text-black">Causal ML</strong>.
       </p>
     </>
   ),
@@ -330,9 +330,9 @@ export const experience: TimelineItem[] = [
     title: 'Research Assistant',
     content: (
       <p>
-        ● Parkinson’s Diagnosis Research: Designed collection procedures for patient data that satisfy researchers’ demand for efficiency while maintaining a controlled experimental environment. <br/><br/>
-        ● Parkinson’s Diagnosis Research: Experimented with off-the-shelf AI products to eliminate personal information, reduce the complexity of the collected videos, and ensure prediction output did not overfit despite a small dataset. <br/><br/>
-        ● Natural Language Query Interface: Built chatbots capable of querying databases, answering questions with accurate information, and generating graphs using an agent-based Large Language Model (LLM).
+        ● Optimized prediction and avoided overfitting in Deep Neural Networks (DNN) despite a data size of fewer than 300 by Implementing data augmentation such as Autoencoding and fast Fourier transform to video data. <br/><br/>
+        ● Developed chatbots with up to 95% accuracy in autonomously querying SQL databases and generating graphs based on accurate data utilizing an agent-based Large Language Model (LLM), capable of mirroring the abilities of a human data scientist based on the company’s past working cases. <br/><br/>
+        ● Ensured safe data transfer and storage by removing personally identifiable information (PII) like faces from collected videos while maintaining the integrity of future prediction processes by integrated off-the-shelf Computer Vision AI. <br/><br/>
       </p>
     ),
   },
@@ -343,11 +343,10 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         ● Managed the development of two data dashboards and a Machine Learning client project. Completed projects on time despite tight schedules and captivated clients with explorations of future directions. <br/><br/>
-        ● Demonstrated proactive problem-solving skills by independently identifying inefficiencies in data pipelines and devising solutions with heuristic algorithms that improved scalability and memory usage by 14x and reduced the processing time by 50%.  <br/><br/>
-        ● Investigated the use of LLM in Personally Identifiable Information (PII) cleaning and web content understanding, and created systems that outperformed manual labeling services in speed and robustness. <br/><br/>
-        ● Leveraged web-scraping and transfer learning with GPT-2 for comprehensive website understanding. Extended capability to sentiment analysis, interest classification, and keyword extraction, while increasing capacity by more than 10 times with half of the cost. <br/><br/>
-        ● Impressed the Business Intelligence team of a global insurance company with client projects, including revamping their data processing system originally in SAS to PowerBI, training machine learning models to predict insurance fraud with Azure, and adding explainable ML to inference output,  establishing long-term collaborative relationships to this day. <br/><br/>
-        ● Fully automated data processing pipelines using Airflow. Removing the need for manual labor in monitoring data quality, updating ML models, and generating reports. <br/><br/>
+        ● Boosted data extraction capacity by more than 10 times with half of the cost and extended website understanding capability from keyword matching to sentiment analysis, interest classification, and keyword extraction by leveraging transfer learning with GPT-2.  <br/><br/>
+        ● Improved scalability and memory usage by 14x and reduced the processing time by 50% in our data pipeline by voluntarily identifying inefficiencies in the implementation of max connected component algorithm and devising solutions with heuristic algorithms. <br/><br/>
+        ● Removed up to 3 hours of manual labor daily by fully automated data processing pipelines using Airflow, allowing autonomous monitoring of data quality, updating ML models, and generating reports through dashboards. <br/><br/>
+        ● Brought in new revenue streams through a partnership with a global insurance company by impressing their Business Intelligence team in projects of upgrading their data pipeline to Azure, incorporating interpretable ML results, and improving cross-department ML model deployment. <br/><br/>
         ● For more detail, download my <a href="document/work-porfolio-hotmob-downloadable.pdf" style={{ color:'SteelBlue'}}>Porfolio Summary PDF</a>.
       </p>
     ),
