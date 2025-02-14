@@ -339,7 +339,7 @@ export const experience: TimelineItem[] = [
       <p>
         ● Optimized prediction and avoided overfitting in Deep Neural Networks (DNN) despite a data size of fewer than 300 by Implementing data augmentation such as Autoencoding and fast Fourier transform to video data. <br/><br/>
         ● Developed chatbots with up to 95% accuracy in autonomously querying SQL databases and generating graphs based on accurate data utilizing an agent-based Large Language Model (LLM), capable of mirroring the abilities of a human data scientist based on the company’s past working cases. <br/><br/>
-        ● Ensured safe data transfer and storage by removing personally identifiable information (PII) like faces from collected videos while maintaining the integrity of future prediction processes by integrated off-the-shelf Computer Vision AI. <br/><br/>
+        ● Ensured safe data transfer and storage by removing personally identifiable information (PII), such as faces, from collected videos while maintaining the integrity of future prediction processes by integrating off-the-shelf Computer Vision AI. <br/><br/>
       </p>
     ),
   },
@@ -354,7 +354,7 @@ export const experience: TimelineItem[] = [
         ● Improved scalability and memory usage by 14x and reduced the processing time by 50% in our data pipeline by voluntarily identifying inefficiencies in the implementation of max connected component algorithm and devising solutions with heuristic algorithms. <br/><br/>
         ● Removed up to 3 hours of manual labor daily by fully automated data processing pipelines using Airflow, allowing autonomous monitoring of data quality, updating ML models, and generating reports through dashboards. <br/><br/>
         ● Brought in new revenue streams through a partnership with a global insurance company by impressing their Business Intelligence team in projects of upgrading their data pipeline to Azure, incorporating interpretable ML results, and improving cross-department ML model deployment. <br/><br/>
-        ● For more detail, download my <a href="document/work-porfolio-hotmob-downloadable.pdf" style={{ color:'SteelBlue'}}>Porfolio Summary PDF</a>.
+        ● For more detail, download my <a href="document/work-porfolio-hotmob-downloadable.pdf" style={{ color:'SteelBlue'}}>Portfolio Summary PDF</a>.
       </p>
     ),
   },
