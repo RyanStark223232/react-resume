@@ -44,11 +44,18 @@ export const heroData: About = {
   name: `Geoffrey`,
   description: (
     <>
-      <p className="prose-sm text-black sm:prose-base lg:prose-lg">
-        I'm a dynamic <strong className="text-black">Full-Stack Data Scientist</strong>.<br/>
-        Seasoned in the trenches of startups, I've mastered the art of <strong className="text-black"> Collecting, Processing, and Presenting </strong> data🤔.<br/>
-        Google Certified <strong className="text-black"> Professional ML Engineer </strong> and <strong className="text-black"> Project Manager </strong>.<br/>
-        Exploring <strong className="text-black">Causal ML</strong>.
+      <style>
+        {`
+          .text-deep-blue {
+            color: #dcf1f2; /* Deep blue color */
+            text-shadow: 1px 1px 0 #000; /* Black text outline */
+          }
+        `}
+      </style>
+      <p className="prose-sm text-deep-blue sm:prose-base lg:prose-lg">
+        I'm a dynamic <strong>Full-Stack Data Scientist</strong>.<br/>
+        Seasoned in the trenches of startups, I've mastered the art of <strong> Collecting, Processing, and Presenting </strong> data🤔.<br/>
+        Google Certified <strong> Professional ML Engineer </strong> and <strong> Project Manager </strong>.<br/>
       </p>
     </>
   ),

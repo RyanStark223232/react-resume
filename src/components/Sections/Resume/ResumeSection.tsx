@@ -6,7 +6,7 @@ interface ResumeSectionProps {
   defaultExpanded?: boolean;
 }
 
-const ResumeSection: FC<PropsWithChildren<ResumeSectionProps>> = memo(({title, children, defaultExpanded = true}) => {
+const ResumeSection: FC<PropsWithChildren<ResumeSectionProps>> = memo(({title, children, defaultExpanded = false}) => {
   const [expanded, setExpanded] = useState(defaultExpanded);
 
   return (
