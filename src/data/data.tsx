@@ -61,7 +61,7 @@ export const heroData: About = {
   ),
   actions: [
     {
-      href: '/document/CV.pdf',
+      href: 'https://docs.google.com/document/d/19VbDM9a4DRx4-bOvTjKU4ZwjPb9klSiFl8WTDiuHK4I/edit?usp=sharing',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
