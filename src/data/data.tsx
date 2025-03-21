@@ -337,9 +337,9 @@ export const experience: TimelineItem[] = [
     title: 'Research Assistant',
     content: (
       <p>
-        ● Optimized prediction and avoided overfitting in Deep Neural Networks (DNN) despite a data size of fewer than 300 by Implementing data augmentation such as Autoencoding and fast Fourier transform to video data. <br/><br/>
-        ● Developed chatbots with up to 95% accuracy in autonomously querying SQL databases and generating graphs based on accurate data utilizing an agent-based Large Language Model (LLM), capable of mirroring the abilities of a human data scientist based on the company’s past working cases. <br/><br/>
-        ● Ensured safe data transfer and storage by removing personally identifiable information (PII), such as faces, from collected videos while maintaining the integrity of future prediction processes by integrating off-the-shelf Computer Vision AI. <br/><br/>
+        ● Optimized prediction AUC to 73% in Deep Neural Networks despite a data size of fewer than 300 by implementing data augmentation such as Autoencoding and fast Fourier transform on video data. <br/><br/>
+        ● Created chatbots achieving up to 95% accuracy in emulating the functions of a human data scientist by independently querying SQL databases and producing graphs using an agent-based Large Language Model. <br/><br/>
+        ● Slashed 80% of the budget by implementing off-the-shelf Computer Vision AI face masking and LLM into data pipelines to eliminate personally identifiable information, replacing costly manual labeling service. <br/><br/>
       </p>
     ),
   },
@@ -349,11 +349,12 @@ export const experience: TimelineItem[] = [
     title: 'Data Scientist',
     content: (
       <p>
-        ● Managed the development of two data dashboards and a Machine Learning client project. Completed projects on time despite tight schedules and captivated clients with explorations of future directions. <br/><br/>
-        ● Boosted data extraction capacity by more than 10 times with half of the cost and extended website understanding capability from keyword matching to sentiment analysis, interest classification, and keyword extraction by leveraging transfer learning with GPT-2.  <br/><br/>
-        ● Improved scalability and memory usage by 14x and reduced the processing time by 50% in our data pipeline by voluntarily identifying inefficiencies in the implementation of max connected component algorithm and devising solutions with heuristic algorithms. <br/><br/>
+        ● Boosted data extraction efficiency by over 10x at half the cost, while successfully implementing sentiment analysis, interest classification, and keyword extraction through transfer learning with GPT-2 for website comprehension. <br/><br/>
+        ● Improved scalability and memory usage by 14x and reduced the processing time by 50% in our data pipeline by implementing the max connected component algorithm in the ID matching system.  <br/><br/>
         ● Removed up to 3 hours of manual labor daily by fully automated data processing pipelines using Airflow, allowing autonomous monitoring of data quality, updating ML models, and generating reports through dashboards. <br/><br/>
-        ● Brought in new revenue streams through a partnership with a global insurance company by impressing their Business Intelligence team in projects of upgrading their data pipeline to Azure, incorporating interpretable ML results, and improving cross-department ML model deployment. <br/><br/>
+        ● Brought in new revenue streams through a partnership with a global insurance company by impressing them with projects like upgrading data pipelines to Azure, incorporating interpretable ML, and developing PowerBI dashboards. <br/><br/>
+        ● Led cross-functional teams in the development of two data dashboards and a Machine Learning fraud detection client project, ensuring timely delivery of high-quality results. <br/><br/>
+        ● Established a fully scalable web crawling system for user profiling capable of processing 15,000 websites daily using Kafka and Kubernetes. <br/><br/>
         ● For more detail, download my <a href="document/work-porfolio-hotmob-downloadable.pdf" style={{ color:'SteelBlue'}}>Portfolio Summary PDF</a>.
       </p>
     ),
@@ -364,9 +365,7 @@ export const experience: TimelineItem[] = [
     title: 'AI Developer Summer Intern',
     content: (
       <p>
-        ● Performed Web Crawling with Selenium to Collect Images and 3D Model Data. <br></br>
-        ● Preprocessed 3D Mesh Data with Programmable Blender. <br></br>
-        ● Built a Voxel Generator that Converts 2D Images into 3D Models. <br></br>
+        ● Scraped and processed more than 1,000 3D models sourced from leading art platforms such as Pinterest with AWS and Blender Program for training images to 3D Mesh Generator. <br></br>
       </p>
     ),
   },
