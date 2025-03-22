@@ -338,7 +338,7 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         ● Optimized prediction AUC to 73% in Deep Neural Networks despite a data size of fewer than 300 by implementing data augmentation such as Autoencoding and fast Fourier transform on video data. <br/><br/>
-        ● Created chatbots achieving up to 95% accuracy in emulating the functions of a human data scientist by independently querying SQL databases and producing graphs using an agent-based Large Language Model. <br/><br/>
+        ● Developed chatbots achieving up to 95% accuracy in emulating the functions of a human data scientist by independently querying SQL databases and producing graphs using an agent-based Large Language Model. <br/><br/>
         ● Slashed 80% of the budget by implementing off-the-shelf Computer Vision AI face masking and LLM into data pipelines to eliminate personally identifiable information, replacing costly manual labeling service. <br/><br/>
       </p>
     ),
@@ -350,10 +350,10 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         ● Boosted data extraction efficiency by over 10x at half the cost, while successfully implementing sentiment analysis, interest classification, and keyword extraction through transfer learning with GPT-2 for website comprehension. <br/><br/>
-        ● Improved scalability and memory usage by 14x and reduced the processing time by 50% in our data pipeline by implementing the max connected component algorithm in the ID matching system.  <br/><br/>
-        ● Removed up to 3 hours of manual labor daily by fully automated data processing pipelines using Airflow, allowing autonomous monitoring of data quality, updating ML models, and generating reports through dashboards. <br/><br/>
-        ● Brought in new revenue streams through a partnership with a global insurance company by impressing them with projects like upgrading data pipelines to Azure, incorporating interpretable ML, and developing PowerBI dashboards. <br/><br/>
-        ● Led cross-functional teams in the development of two data dashboards and a Machine Learning fraud detection client project, ensuring timely delivery of high-quality results. <br/><br/>
+        ● Improved scalability and memory usage by 14x and reduced the processing time by 50% in our ETL pipeline by implementing the max connected component algorithm in the ID matching system.  <br/><br/>
+        ● Removed up to 3 hours of manual labor daily with MLOps. Fully automated data pipelines using Airflow, allowing autonomous monitoring of data quality, updating ML models, and generating reports through dashboards. <br/><br/>
+        ● Brought in new revenue streams through a partnership with a global insurance company by impressing them with projects incorporating interpretable ML to Azure AI Suites and developing PowerBI dashboards. <br/><br/>
+        ● Led cross-functional teams in developing two data dashboards and a Machine Learning fraud detection client project, orchestrating efficient work parallelization to achieve delivery within 1 month. <br/><br/>
         ● Established a fully scalable web crawling system for user profiling capable of processing 15,000 websites daily using Kafka and Kubernetes. <br/><br/>
         ● For more detail, download my <a href="document/work-porfolio-hotmob-downloadable.pdf" style={{ color:'SteelBlue'}}>Portfolio Summary PDF</a>.
       </p>
