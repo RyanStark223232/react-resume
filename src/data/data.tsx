@@ -198,6 +198,10 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
+        name: 'Kubernetes',
+        level: 5,
+      },
+      {
         name: 'Databricks',
         level: 4,
       },
@@ -311,7 +315,9 @@ export const education: TimelineItem[] = [
     date: 'Sep 2024 - Now',
     location: 'University of Calgary (CA)',
     title: 'Master of Data Science and Analytics',
-    content: <p/>,
+    content: <p>
+    GPA: 3.96 <br/>
+    </p>,
   },
   {
     date: 'Sep 2017 - July 2021',
@@ -371,7 +377,7 @@ export const experience: TimelineItem[] = [
   },
 ];
 
-export const cert_summary = "- Professional Machine Learning Engineer\n- Google Project Management Professional Certificate\n- Large Language Model Learning Path\n- MXNet Workshop"
+export const cert_summary = "- Professional Machine Learning Engineer\n- Google Project Management Professional Certificate\n- Large Language Model Learning Path\n- MXNet Workshop\n- Certified Kubernetes Administrator (CKA)"
 export const certificate: TimelineItem[] = [
   {
     date: 'June 2023 - June 2025',
@@ -400,6 +406,16 @@ export const certificate: TimelineItem[] = [
     content: (
       <a href="https://www.cloudskillsboost.google/public_profiles/2fec738c-c5ed-4828-9be9-700b4a7de855">
         <img alt="GenAI Path" src="images/GenAI_Path_Completion.png"/>
+      </a>
+    ),
+  },
+  {
+    date: 'June 2025 Onward',
+    location: 'Udemy',
+    title: 'Certified Kubernetes Administrator (CKA)',
+    content: (
+      <a href="https://www.udemy.com/certificate/UC-745259c4-3062-45ce-8bb8-2c6d74a9df76/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com">
+        <img alt="CKA" src="images/kubernetes_cert.jpg"/>
       </a>
     ),
   },
