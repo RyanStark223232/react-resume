@@ -9,10 +9,12 @@ import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.png';
 import porfolioImage7 from '../images/portfolio/portfolio-7.png';
+import porfolioImage8 from '../images/portfolio/portfolio-8.png';
 import porfolioImage9 from '../images/portfolio/portfolio-9.png';
 import porfolioImage10 from '../images/portfolio/portfolio-10.png';
 import porfolioImage11 from '../images/portfolio/portfolio-11.png';
 import porfolioImage12 from '../images/portfolio/portfolio-12.png';
+import porfolioImage13 from '../images/portfolio/portfolio-13.png';
 
 import {
   About,
@@ -54,8 +56,7 @@ export const heroData: About = {
       </style>
       <p className="prose-sm text-deep-blue sm:prose-base lg:prose-lg">
         I'm a dynamic <strong>Full-Stack Data Scientist</strong>.<br/>
-        Seasoned in the trenches of startups, I've mastered the art of <strong> Collecting, Processing, and Presenting </strong> data🤔.<br/>
-        Google Certified <strong> Professional ML Engineer </strong> and <strong> Project Manager </strong>.<br/>
+        I've mastered the art of <strong> Collecting, Processing, and Presenting </strong> data🤔.<br/>
       </p>
     </>
   ),
@@ -235,7 +236,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'GCP End-to-End Data Pipeline + Recommendation System',
     description: 'School project in UofC focusing on demonstrating ability to create Machine Learning Applications on Cloud',
     skills: 'Skills: Data Engineering, Machine Learning',
-    url: 'https://604project2-team03.github.io/GCP-Data-DevOps/',
+    url: 'https://ryanstark223232.github.io/fullstack-GCP/',
     image: porfolioImage12
   },
   {
@@ -258,6 +259,20 @@ export const portfolioItems: PortfolioItem[] = [
     skills: 'Skills: Data Analysis, Hyperparameter Tuning, Explainable ML, Business Insights',
     url: 'https://ryanstark223232.github.io/Hotmob-Entrance-Test/Analyst_Report.html',
     image: porfolioImage9
+  },
+  {
+    title: 'Forcasting App Usage with ARIMA & LSTM',
+    description: 'Focusing on the usage of communication apps, which exhibit a seasonal pattern of higher usage during work hours, the demonstration reveals that LSTM is superior at capturing more complex patterns compared to ARIMA, with a lower Mean Squared Error.',
+    skills: 'Skills: Forcasting',
+    url: 'https://ryanstark223232.github.io/fullstack-GCP/html/App_Usage_LSTM_forcasting.html',
+    image: porfolioImage8
+  },
+  {
+    title: 'App Usage vs Time',
+    description: 'Analyze the usage of different types of apps versus the time of day and week using linear regression, including assumption checking.',
+    skills: 'Skills: Linear Regression, R',
+    url: 'https://ryanstark223232.github.io/fullstack-GCP/html/App-Usage-and-Time.html',
+    image: porfolioImage13
   },
   {
     title: 'LLM-Trainer (LoRA)',
