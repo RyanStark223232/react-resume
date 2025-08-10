@@ -1,0 +1,479 @@
+/* Contact Section */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.contact-container {
+  width: 75%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 40px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Grid for multiple contact entries */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* ✅ Responsive columns */
+  gap: 30px;
+  width: 100%;
+  justify-items: center;
+}
+
+/* Contact Box */
+.contact-box {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px; /* ✅ Prevents boxes from becoming too wide */
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+}
+
+.contact-box:hover {
+  transform: translateY(-5px);
+}
+
+.contact-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid white;
+}
+
+.contact-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.contact-link {
+  display: inline-block;
+  background-color: #00bcd4;
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-link:hover {
+  background-color: #00a2b5;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center; /* ✅ vertical centering */
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.portfolio-box {
+  width: 75%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 40px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* ✅ center content vertically inside box */
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: center; /* ✅ Center image vertically in each row */
+}
+
+/* Each item is only as big as its content */
+.portfolio-item {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* ✅ Center image vertically in item */
+}
+
+/* Wrapper adapts to image size */
+.portfolio-image-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  width: fit-content;
+}
+
+/* Image scales naturally */
+.portfolio-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlay fills the exact dimensions of the image */
+.portfolio-overlay {
+  position: absolute;
+  inset: 0; /* Top, right, bottom, left = 0 */
+  background: rgba(15, 15, 15, 0.85);
+  color: white;
+  border-radius: 8px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.portfolio-image-wrapper:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  max-width: 90%;
+  text-align: center;
+}
+
+.overlay-content h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.overlay-description {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+}
+
+.overlay-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.overlay-skills li {
+  background: #00bcd4;
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* Resume Section Layout */
+.certification-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cert-image {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.cert-image:hover {
+  transform: scale(1.05);
+}
+
+.cert-info {
+  flex: 1;
+}
+
+.cert-info h4 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+}
+
+.cert-info p {
+  margin: 0;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.resume-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.resume-box {
+  width: 75%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.resume-box:hover {
+  transform: scale(1.01);
+}
+
+.resume-row {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 30px;
+}
+
+.resume-title {
+  flex: 0 0 30%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+}
+
+.resume-content {
+  max-height: 550px; /* Adjust height as needed */
+  overflow-y: auto;
+  padding-right: 8px; /* Prevent scrollbar from overlapping text */
+  width: 6px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.resume-content::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 4px;
+}
+
+.resume-content::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+.resume-card {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.resume-card:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.resume-card h4 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.resume-card .period {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.resume-card ul {
+  padding-left: 20px;
+  list-style: disc;
+  margin: 0;
+}
+
+/* Two-column layout for Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* ✅ Responsive two-column */
+  gap: 30px;
+}
+
+/* Skill card styling (already applied to resume-card) */
+.resume-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.resume-card h4 {
+  margin-bottom: 10px;
+  color: #00bcd4;
+}
+
+.resume-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.resume-card li {
+  margin-bottom: 6px;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.about-box {
+  width: 75%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 40px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s;
+}
+
+.about-box:hover {
+  transform: translateY(-5px);
+}
+
+.about-box h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.summary {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.resume-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00bcd4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.resume-link:hover {
+  background-color: #0097a7;
+}
+
+/* Header styles */
+.header {
+  position: fixed;
+  top: 1;
+  left: 1;
+  width: 60%;
+  height: 1%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 20px 20px; /* reduced Y-axis padding */
+}
+
+/* Navbar Container */
+.navbar {
+  width: 100%;
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center; /* ✅ Center horizontally */
+}
+
+/* Nav Links Container */
+.navbar-links {
+  display: flex;
+  gap: 40px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #00bcd4;
+}
+
+/* Index styles */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #000;
+  color: white;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.app-container {
+  position: relative;
+  z-index: 1;
+}
