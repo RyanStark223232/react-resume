@@ -55,8 +55,8 @@ export const heroData: About = {
         `}
       </style>
       <p className="prose-sm text-deep-blue sm:prose-base lg:prose-lg">
-        I'm a dynamic <strong>Full-Stack Data Scientist</strong>.<br/>
-        I've mastered the art of <strong> Collecting, Processing, and Presenting </strong> data🤔.<br/>
+        Results-driven <strong> Data Scientist and AI Developer with over 3 years of experience </strong> designing scalable ML pipelines, developing NLP and computer vision solutions, and optimizing performance in resource-constrained environments. <br/>
+        Proven track record of boosting efficiency, automating workflows, and delivering impactful data products in both academic and industry settings. <br/>
       </p>
     </>
   ),
@@ -358,9 +358,9 @@ export const experience: TimelineItem[] = [
     title: 'Research Assistant',
     content: (
       <p>
-        ● Optimized prediction AUC to 73% in Deep Neural Networks despite a data size of fewer than 300 by implementing data augmentation such as Autoencoding and fast Fourier transform on video data. <br/><br/>
-        ● Developed chatbots achieving up to 95% accuracy in emulating the functions of a human data scientist by independently querying SQL databases and producing graphs using an agent-based Large Language Model. <br/><br/>
-        ● Slashed 80% of the budget by implementing off-the-shelf Computer Vision AI face masking and LLM into data pipelines to eliminate personally identifiable information, replacing costly manual labeling service. <br/><br/>
+        ● Boosted the Computer Vision Diagnostic model AUC to 73% by applying advanced feature engineering and data augmentation (Autoencoding, FFT). <br/><br/>
+        ● Developed agentic chatbots in LangChain with 95% accuracy to autonomously query SQL databases and generate visual reports. <br/><br/>
+        ● Cut operational costs by 80% by integrating pre-trained face masking CV models and LLMs into ML pipelines, enabling real-time PII redaction at scale. <br/><br/>
       </p>
     ),
   },
@@ -370,12 +370,12 @@ export const experience: TimelineItem[] = [
     title: 'Data Scientist',
     content: (
       <p>
-        ● Boosted data extraction efficiency by over 10x at half the cost, while successfully implementing sentiment analysis, interest classification, and keyword extraction through transfer learning with GPT-2 for website comprehension. <br/><br/>
-        ● Improved scalability and memory usage by 14x and reduced the processing time by 50% in our ETL pipeline by implementing the max connected component algorithm in the ID matching system.  <br/><br/>
-        ● Removed up to 3 hours of manual labor daily with MLOps. Fully automated data pipelines using Airflow, allowing autonomous monitoring of data quality, updating ML models, and generating reports through dashboards. <br/><br/>
-        ● Brought in new revenue streams through a partnership with a global insurance company by impressing them with projects incorporating interpretable ML to Azure AI Suites and developing PowerBI dashboards. <br/><br/>
-        ● Led cross-functional teams in developing two data dashboards and a Machine Learning fraud detection client project, orchestrating efficient work parallelization to achieve delivery within 1 month. <br/><br/>
-        ● Established a fully scalable web crawling system for user profiling capable of processing 15,000 websites daily using Kafka and Kubernetes. <br/><br/>
+        ● Increased NLP website comprehension system throughput by 10x while reducing inference cost by 50% via GPT-2 fine-tuning and optimized deployment. <br/><br/>
+        ● Scaled ETL pipeline performance 14x by implementing a graph-based max connected component algorithm for high-volume ID matching.  <br/><br/>
+        ● Automated model retraining and data quality checks using Airflow and MLflow, eliminating up to 3 hours of manual intervention daily. <br/><br/>
+        ● Led cloud MLOps enablement for a global insurance provider, integrating interpretable ML solutions, managing SAS-to-Databricks migration, and deploying Power BI dashboards for real-time insights. <br/><br/>
+        ● Directed cross-functional efforts to build two data dashboards and a machine learning–powered fraud detection system, optimizing task parallelization to deliver results in under one month. <br/><br/>
+        ● Engineered a fully scalable web crawling platform for user profiling, leveraging Kafka and Kubernetes to process over 15,000 websites daily with high reliability. <br/><br/>
         ● For more detail, download my <a href="document/work-porfolio-hotmob-downloadable.pdf" style={{ color:'SteelBlue'}}>Portfolio Summary PDF</a>.
       </p>
     ),
@@ -386,7 +386,7 @@ export const experience: TimelineItem[] = [
     title: 'AI Developer Summer Intern',
     content: (
       <p>
-        ● Scraped and processed more than 1,000 3D models sourced from leading art platforms such as Pinterest with AWS and Blender Program for training images to 3D Mesh Generator. <br></br>
+        ● Scraped and processed over 1,000 3D models from top art platforms like Pinterest, utilizing AWS and Blender to generate training data for a 3D mesh generation system. <br></br>
       </p>
     ),
   },
